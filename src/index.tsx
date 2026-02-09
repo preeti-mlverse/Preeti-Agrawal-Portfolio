@@ -488,32 +488,7 @@ const portfolioHTML = `
                     </div>
                 </div>
                 <div class="illustration-container">
-                    <svg class="hero-illustration" viewBox="0 0 400 350" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="80" y="180" width="240" height="120" rx="8" fill="#E2E8F0"/>
-                        <rect x="100" y="195" width="140" height="90" rx="6" fill="#667EEA"/>
-                        <rect x="110" y="205" width="120" height="70" rx="4" fill="#EDF2F7"/>
-                        <path d="M125 255 L145 235 L165 245 L185 220 L205 230" stroke="#9F7AEA" stroke-width="3" stroke-linecap="round"/>
-                        <circle cx="125" cy="255" r="3" fill="#9F7AEA"/>
-                        <circle cx="145" cy="235" r="3" fill="#9F7AEA"/>
-                        <circle cx="165" cy="245" r="3" fill="#9F7AEA"/>
-                        <circle cx="185" cy="220" r="3" fill="#9F7AEA"/>
-                        <circle cx="205" cy="230" r="3" fill="#9F7AEA"/>
-                        <circle cx="280" cy="140" r="35" fill="#FED7AA"/>
-                        <ellipse cx="280" cy="220" rx="40" ry="50" fill="#667EEA"/>
-                        <path d="M245 130 Q250 90 280 85 Q310 90 315 130 Q310 120 280 115 Q250 120 245 130" fill="#4A5568"/>
-                        <rect x="260" y="240" width="25" height="30" rx="4" fill="#F6AD7B"/>
-                        <ellipse cx="272" cy="240" rx="12" ry="4" fill="#FEEBC8"/>
-                        <rect x="320" y="230" width="20" height="35" rx="4" fill="#C6F6D5"/>
-                        <circle cx="330" cy="215" r="15" fill="#9AE6B4"/>
-                        <circle cx="322" cy="210" r="10" fill="#68D391"/>
-                        <circle cx="338" cy="210" r="10" fill="#68D391"/>
-                        <circle cx="120" cy="120" r="20" fill="#E9D8FD" opacity="0.8"/>
-                        <text x="114" y="126" font-size="16" fill="#667EEA">AI</text>
-                        <rect x="60" y="160" width="40" height="25" rx="6" fill="#C6F6D5" opacity="0.8"/>
-                        <text x="68" y="178" font-size="10" fill="#38A169">ML</text>
-                        <rect x="320" y="100" width="50" height="25" rx="6" fill="#FEEBC8" opacity="0.8"/>
-                        <text x="325" y="118" font-size="10" fill="#DD6B20">Data</text>
-                    </svg>
+                    <img src="https://www.genspark.ai/api/files/s/XXxWCPOV" alt="Product Leader at Work" class="hero-illustration rounded-2xl" style="max-width: 300px;">
                 </div>
             </div>
 
@@ -568,13 +543,7 @@ const portfolioHTML = `
         <section id="journey" class="tab-content">
             <div class="flex items-center gap-4 mb-8">
                 <h2 class="text-3xl font-bold text-gray-800">My Journey</h2>
-                <svg class="section-illustration" viewBox="0 0 150 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 80 Q40 40 75 60 Q110 80 130 40" stroke="#667EEA" stroke-width="4" stroke-linecap="round" fill="none"/>
-                    <circle cx="20" cy="80" r="8" fill="#9AE6B4"/>
-                    <circle cx="75" cy="60" r="8" fill="#F6AD7B"/>
-                    <circle cx="130" cy="40" r="8" fill="#C4B5FD"/>
-                    <path d="M125 35 L135 40 L125 45" fill="#C4B5FD"/>
-                </svg>
+                <img src="https://www.genspark.ai/api/files/s/i4PiINeS" alt="Career Journey" class="section-illustration rounded-xl" style="max-width: 150px;">
             </div>
             
             <div class="timeline-container">
@@ -744,14 +713,7 @@ const portfolioHTML = `
         <section id="projects" class="tab-content">
             <div class="flex items-center gap-4 mb-8">
                 <h2 class="text-3xl font-bold text-gray-800">Projects</h2>
-                <svg class="section-illustration" viewBox="0 0 150 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="20" y="30" width="50" height="60" rx="6" fill="#E9D8FD"/>
-                    <rect x="30" y="40" width="30" height="4" rx="2" fill="#667EEA"/>
-                    <rect x="30" y="50" width="25" height="4" rx="2" fill="#9F7AEA"/>
-                    <rect x="80" y="20" width="50" height="70" rx="6" fill="#C6F6D5"/>
-                    <circle cx="105" cy="45" r="15" fill="#9AE6B4"/>
-                    <path d="M100 45 L105 50 L115 40" stroke="#38A169" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <img src="https://www.genspark.ai/api/files/s/ieyU08fz" alt="Project Management" class="section-illustration rounded-xl" style="max-width: 150px;">
             </div>
 
             <!-- Trumee Section -->
