@@ -1526,7 +1526,7 @@ const portfolioHTML = `
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold text-gray-800">Leads Management Module</h3>
-                                <p class="text-indigo-500">Contact Center Optimization</p>
+                                <p class="text-indigo-500">Real-Time Lead Collection & Assignment</p>
                             </div>
                         </div>
                         <div class="metric-badge" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">
@@ -1534,7 +1534,7 @@ const portfolioHTML = `
                         </div>
                     </div>
                     
-                    <p class="text-gray-600 mb-4">Real-time leads management enabling unified leads, prioritization, and improved agent productivity.</p>
+                    <p class="text-gray-600 mb-4">Real-time lead collection and assignment system using event-driven architecture for contact center optimization.</p>
                     
                     <div class="grid md:grid-cols-2 gap-6 mt-6">
                         <div>
@@ -1542,21 +1542,60 @@ const portfolioHTML = `
                                 <i class="fas fa-question-circle text-purple-400"></i>
                                 <span class="font-semibold text-gray-700">Why</span>
                             </div>
-                            <p class="text-gray-600 text-sm">Sales conversion limited by delayed lead visibility, manual prioritization, and fragmented systems across channels.</p>
+                            <p class="text-gray-600 text-sm">Sales conversion limited by delayed lead visibility, manual prioritization, and fragmented systems across channels. Leads were not reaching support teams in real-time.</p>
                         </div>
                         <div>
                             <div class="flex items-center gap-2 mb-2">
                                 <i class="fas fa-lightbulb text-yellow-400"></i>
                                 <span class="font-semibold text-gray-700">What</span>
                             </div>
-                            <p class="text-gray-600 text-sm">Real-time leads management module unifying leads across channels with prioritization based on intent and eligibility.</p>
+                            <p class="text-gray-600 text-sm">Real-time lead collection module that captures leads across channels and automatically assigns them to customer support team individuals based on eligibility and intent.</p>
                         </div>
                         <div>
                             <div class="flex items-center gap-2 mb-2">
                                 <i class="fas fa-cogs text-green-400"></i>
                                 <span class="font-semibold text-gray-700">How</span>
                             </div>
-                            <p class="text-gray-600 text-sm">Defined end-to-end lead lifecycle (capture → assignment → conversion). Designed agent workflows and escalation states. Integrated conversion analytics.</p>
+                            <p class="text-gray-600 text-sm">Built event-driven architecture using <strong>AWS EventBridge</strong> for real-time event routing, <strong>AWS Lambda</strong> for serverless processing, and <strong>CleverTap</strong> for lead capture and assignment workflows.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-users text-blue-400"></i>
+                                <span class="font-semibold text-gray-700">With Whom</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Contact center teams, AWS cloud engineering, CleverTap integration team, Business stakeholders.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="architecture-block mt-4">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i class="fas fa-sitemap text-green-500"></i>
+                            <span class="font-semibold text-gray-700">Technical Architecture</span>
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-3">
+                            <div class="bg-white p-3 rounded-lg text-center">
+                                <i class="fab fa-aws text-orange-500 mb-1"></i>
+                                <div class="text-xs font-semibold">AWS EventBridge</div>
+                                <p class="text-xs text-gray-500">Real-time event routing</p>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg text-center">
+                                <i class="fas fa-lambda text-yellow-500 mb-1"></i>
+                                <div class="text-xs font-semibold">AWS Lambda</div>
+                                <p class="text-xs text-gray-500">Serverless processing</p>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg text-center">
+                                <i class="fas fa-bullseye text-purple-500 mb-1"></i>
+                                <div class="text-xs font-semibold">CleverTap</div>
+                                <p class="text-xs text-gray-500">Lead capture & assignment</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-3">
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">5% Conversion ↑</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #BEE3F8 0%, #90CDF4 100%);">Real-Time Assignment</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #FED7AA 0%, #F6AD7B 100%);">Faster Lead Response</span>
                         </div>
                     </div>
                     
@@ -1565,7 +1604,7 @@ const portfolioHTML = `
                             <i class="fas fa-brain text-purple-500"></i>
                             <span class="font-semibold text-gray-700">PM Judgment</span>
                         </div>
-                        <p class="text-gray-600 text-sm">Prioritized <strong>speed and clarity for agents</strong> over complex scoring models in early phases.</p>
+                        <p class="text-gray-600 text-sm">Chose <strong>event-driven serverless architecture</strong> over batch processing to minimize lead response time and maximize conversion window.</p>
                     </div>
                 </div>
 
