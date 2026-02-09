@@ -213,11 +213,17 @@ const portfolioHTML = `
         }
         
         .hero-illustration {
-            max-width: 300px;
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
         }
         
         .section-illustration {
             max-width: 150px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
         }
         
         .scroll-indicator {
@@ -488,44 +494,7 @@ const portfolioHTML = `
                     </div>
                 </div>
                 <div class="illustration-container">
-                    <svg class="hero-illustration" viewBox="0 0 400 350" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Desk -->
-                        <rect x="60" y="220" width="200" height="10" rx="2" fill="#F6AD7B"/>
-                        <rect x="70" y="230" width="8" height="80" fill="#F6AD7B"/>
-                        <rect x="242" y="230" width="8" height="80" fill="#F6AD7B"/>
-                        <!-- Laptop -->
-                        <rect x="100" y="180" width="120" height="80" rx="4" fill="#E2E8F0"/>
-                        <rect x="105" y="185" width="110" height="65" rx="2" fill="#667EEA"/>
-                        <rect x="110" y="190" width="100" height="55" rx="2" fill="#EDF2F7"/>
-                        <!-- Chart on screen -->
-                        <path d="M120 230 L140 210 L160 220 L180 195 L200 205" stroke="#9F7AEA" stroke-width="2" stroke-linecap="round"/>
-                        <circle cx="120" cy="230" r="3" fill="#9F7AEA"/>
-                        <circle cx="140" cy="210" r="3" fill="#9F7AEA"/>
-                        <circle cx="160" cy="220" r="3" fill="#9F7AEA"/>
-                        <circle cx="180" cy="195" r="3" fill="#9F7AEA"/>
-                        <circle cx="200" cy="205" r="3" fill="#9F7AEA"/>
-                        <!-- Person -->
-                        <circle cx="300" cy="140" r="30" fill="#FED7AA"/>
-                        <ellipse cx="300" cy="210" rx="35" ry="45" fill="#F687B3"/>
-                        <path d="M270 125 Q275 95 300 90 Q325 95 330 125 Q320 115 300 112 Q280 115 270 125" fill="#4A5568"/>
-                        <!-- Arms -->
-                        <ellipse cx="255" cy="200" rx="8" ry="25" fill="#FED7AA" transform="rotate(-20 255 200)"/>
-                        <ellipse cx="345" cy="200" rx="8" ry="25" fill="#FED7AA" transform="rotate(20 345 200)"/>
-                        <!-- Chair -->
-                        <rect x="265" y="250" width="70" height="60" rx="8" fill="#E2E8F0"/>
-                        <rect x="295" y="310" width="10" height="30" fill="#A0AEC0"/>
-                        <!-- Plant -->
-                        <rect x="320" y="200" width="20" height="25" rx="4" fill="#9AE6B4"/>
-                        <ellipse cx="330" cy="195" rx="15" ry="20" fill="#68D391"/>
-                        <ellipse cx="325" cy="190" rx="10" ry="15" fill="#48BB78"/>
-                        <!-- Floating badges -->
-                        <circle cx="100" cy="120" r="20" fill="#E9D8FD" opacity="0.9"/>
-                        <text x="89" y="126" font-size="14" fill="#667EEA" font-weight="bold">AI</text>
-                        <rect x="55" y="160" width="35" height="22" rx="6" fill="#C6F6D5" opacity="0.9"/>
-                        <text x="62" y="176" font-size="10" fill="#38A169" font-weight="bold">ML</text>
-                        <rect x="330" y="100" width="45" height="22" rx="6" fill="#FEEBC8" opacity="0.9"/>
-                        <text x="337" y="116" font-size="10" fill="#DD6B20" font-weight="bold">Data</text>
-                    </svg>
+                    <img src="/illustrations/2.png" alt="Product Leader" class="hero-illustration illustration" />
                 </div>
             </div>
 
@@ -580,24 +549,7 @@ const portfolioHTML = `
         <section id="journey" class="tab-content">
             <div class="flex items-center gap-4 mb-8">
                 <h2 class="text-3xl font-bold text-gray-800">My Journey</h2>
-                <svg class="section-illustration" viewBox="0 0 150 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Stopwatch -->
-                    <circle cx="75" cy="60" r="40" fill="#F6AD7B" opacity="0.9"/>
-                    <circle cx="75" cy="60" r="32" fill="white"/>
-                    <rect x="72" y="15" width="6" height="12" rx="2" fill="#F6AD7B"/>
-                    <line x1="75" y1="60" x2="75" y2="38" stroke="#4A5568" stroke-width="3" stroke-linecap="round"/>
-                    <line x1="75" y1="60" x2="90" y2="55" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
-                    <circle cx="75" cy="60" r="4" fill="#4A5568"/>
-                    <!-- Person 1 -->
-                    <circle cx="30" cy="75" r="10" fill="#FED7AA"/>
-                    <ellipse cx="30" cy="100" rx="12" ry="15" fill="#ECC94B"/>
-                    <!-- Person 2 -->
-                    <circle cx="115" cy="50" r="8" fill="#FED7AA"/>
-                    <ellipse cx="115" cy="70" rx="10" ry="12" fill="#ECC94B"/>
-                    <!-- Checkmark -->
-                    <circle cx="125" cy="25" r="12" fill="#ECC94B"/>
-                    <path d="M119 25 L123 29 L131 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                <img src="/illustrations/1.png" alt="My Journey" class="section-illustration illustration" />
             </div>
             
             <div class="timeline-container">
@@ -767,34 +719,7 @@ const portfolioHTML = `
         <section id="projects" class="tab-content">
             <div class="flex items-center gap-4 mb-8">
                 <h2 class="text-3xl font-bold text-gray-800">Projects</h2>
-                <svg class="section-illustration" viewBox="0 0 150 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Checklist background -->
-                    <rect x="10" y="10" width="80" height="100" rx="6" fill="#BEE3F8"/>
-                    <rect x="18" y="25" width="10" height="10" rx="2" fill="#90CDF4"/>
-                    <path d="M20 30 L23 33 L28 27" stroke="#F6AD7B" stroke-width="2" stroke-linecap="round"/>
-                    <rect x="32" y="27" width="50" height="4" rx="2" fill="#F6AD7B" opacity="0.6"/>
-                    <rect x="18" y="45" width="10" height="10" rx="2" fill="#90CDF4"/>
-                    <path d="M20 50 L23 53 L28 47" stroke="#F6AD7B" stroke-width="2" stroke-linecap="round"/>
-                    <rect x="32" y="47" width="45" height="4" rx="2" fill="#F6AD7B" opacity="0.6"/>
-                    <rect x="18" y="65" width="10" height="10" rx="2" fill="#90CDF4"/>
-                    <path d="M20 70 L23 73 L28 67" stroke="#F6AD7B" stroke-width="2" stroke-linecap="round"/>
-                    <rect x="32" y="67" width="40" height="4" rx="2" fill="#F6AD7B" opacity="0.6"/>
-                    <rect x="18" y="85" width="10" height="10" rx="2" fill="#90CDF4"/>
-                    <rect x="32" y="87" width="35" height="4" rx="2" fill="#F6AD7B" opacity="0.4"/>
-                    <!-- Clock -->
-                    <circle cx="115" cy="35" r="28" fill="#F6AD7B" opacity="0.9"/>
-                    <circle cx="115" cy="35" r="22" fill="white"/>
-                    <line x1="115" y1="35" x2="115" y2="20" stroke="#90CDF4" stroke-width="2" stroke-linecap="round"/>
-                    <line x1="115" y1="35" x2="125" y2="40" stroke="#90CDF4" stroke-width="2" stroke-linecap="round"/>
-                    <circle cx="115" cy="35" r="3" fill="#F6AD7B"/>
-                    <!-- Checkmark badge -->
-                    <circle cx="130" cy="15" r="10" fill="#F6AD7B"/>
-                    <path d="M125 15 L128 18 L135 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <!-- Person sitting -->
-                    <circle cx="100" cy="85" r="12" fill="#FED7AA"/>
-                    <ellipse cx="100" cy="108" rx="15" ry="12" fill="#F6AD7B"/>
-                    <rect x="80" y="95" width="20" height="12" rx="2" fill="#4A5568"/>
-                </svg>
+                <img src="/illustrations/3.png" alt="Projects" class="section-illustration illustration" />
             </div>
 
             <!-- Trumee Section -->
