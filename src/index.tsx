@@ -341,6 +341,25 @@ const portfolioHTML = `
             margin-top: 16px;
             border-left: 3px solid #9F7AEA;
         }
+        
+        .company-header {
+            background: linear-gradient(135deg, #667EEA 0%, #9F7AEA 100%);
+            color: white;
+            padding: 16px 24px;
+            border-radius: 16px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        .company-header.amazon {
+            background: linear-gradient(135deg, #FF9900 0%, #FFAC31 100%);
+        }
+        
+        .company-header.rbl {
+            background: linear-gradient(135deg, #2D8B4E 0%, #48BB78 100%);
+        }
 
         @media (max-width: 768px) {
             .timeline-line {
@@ -470,31 +489,24 @@ const portfolioHTML = `
                 </div>
                 <div class="illustration-container">
                     <svg class="hero-illustration" viewBox="0 0 400 350" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Desk/workspace illustration -->
                         <rect x="80" y="180" width="240" height="120" rx="8" fill="#E2E8F0"/>
                         <rect x="100" y="195" width="140" height="90" rx="6" fill="#667EEA"/>
                         <rect x="110" y="205" width="120" height="70" rx="4" fill="#EDF2F7"/>
-                        <!-- Chart on screen -->
                         <path d="M125 255 L145 235 L165 245 L185 220 L205 230" stroke="#9F7AEA" stroke-width="3" stroke-linecap="round"/>
                         <circle cx="125" cy="255" r="3" fill="#9F7AEA"/>
                         <circle cx="145" cy="235" r="3" fill="#9F7AEA"/>
                         <circle cx="165" cy="245" r="3" fill="#9F7AEA"/>
                         <circle cx="185" cy="220" r="3" fill="#9F7AEA"/>
                         <circle cx="205" cy="230" r="3" fill="#9F7AEA"/>
-                        <!-- Person -->
                         <circle cx="280" cy="140" r="35" fill="#FED7AA"/>
                         <ellipse cx="280" cy="220" rx="40" ry="50" fill="#667EEA"/>
-                        <!-- Hair -->
                         <path d="M245 130 Q250 90 280 85 Q310 90 315 130 Q310 120 280 115 Q250 120 245 130" fill="#4A5568"/>
-                        <!-- Coffee mug -->
                         <rect x="260" y="240" width="25" height="30" rx="4" fill="#F6AD7B"/>
                         <ellipse cx="272" cy="240" rx="12" ry="4" fill="#FEEBC8"/>
-                        <!-- Plants -->
                         <rect x="320" y="230" width="20" height="35" rx="4" fill="#C6F6D5"/>
                         <circle cx="330" cy="215" r="15" fill="#9AE6B4"/>
                         <circle cx="322" cy="210" r="10" fill="#68D391"/>
                         <circle cx="338" cy="210" r="10" fill="#68D391"/>
-                        <!-- Floating data elements -->
                         <circle cx="120" cy="120" r="20" fill="#E9D8FD" opacity="0.8"/>
                         <text x="114" y="126" font-size="16" fill="#667EEA">AI</text>
                         <rect x="60" y="160" width="40" height="25" rx="6" fill="#C6F6D5" opacity="0.8"/>
@@ -581,11 +593,10 @@ const portfolioHTML = `
                                 <p class="text-indigo-500 font-medium">Trumee (AI-enabled D2C Fashion)</p>
                             </div>
                         </div>
-                        <p class="text-gray-600 text-sm mb-3">Founded an AI-enabled D2C women's fashion brand to validate AI-driven demand and inventory solutions after AlphaSense layoffs.</p>
+                        <p class="text-gray-600 text-sm mb-3">Founded an AI-enabled D2C women's fashion brand to validate AI-driven demand and inventory solutions.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-3 py-1 bg-green-100 text-green-700 rounded-full">Full P&L Ownership</span>
                             <span class="text-xs px-3 py-1 bg-purple-100 text-purple-700 rounded-full">AI/ML</span>
-                            <span class="text-xs px-3 py-1 bg-blue-100 text-blue-700 rounded-full">E-commerce</span>
                         </div>
                     </div>
                     <div class="timeline-dot"></div>
@@ -607,11 +618,10 @@ const portfolioHTML = `
                                 <p class="text-indigo-500 font-medium">AlphaSense (SaaS/FinTech)</p>
                             </div>
                         </div>
-                        <p class="text-gray-600 text-sm mb-3">Led Client Analytics Platform development with $13.14M projected ARR impact. Built E2E analytics infrastructure serving 20+ teams.</p>
+                        <p class="text-gray-600 text-sm mb-3">Led Client Analytics Platform, Unified Analytics, BI Chatbot, and NPS infrastructure optimization.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-3 py-1 bg-green-100 text-green-700 rounded-full">$13.14M ARR</span>
-                            <span class="text-xs px-3 py-1 bg-orange-100 text-orange-700 rounded-full">Analytics</span>
-                            <span class="text-xs px-3 py-1 bg-blue-100 text-blue-700 rounded-full">BI Chatbot</span>
+                            <span class="text-xs px-3 py-1 bg-blue-100 text-blue-700 rounded-full">20+ Teams</span>
                         </div>
                     </div>
                 </div>
@@ -629,11 +639,10 @@ const portfolioHTML = `
                                 <p class="text-indigo-500 font-medium">Amazon Development Center</p>
                             </div>
                         </div>
-                        <p class="text-gray-600 text-sm mb-3">Automated catalog duplication detection using NLP/CV. Drove $29M+ in combined business value through multiple ML initiatives.</p>
+                        <p class="text-gray-600 text-sm mb-3">Led catalog deduplication (NLP/CV), defect removal automation, and A/B testing for marketing campaigns.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="text-xs px-3 py-1 bg-green-100 text-green-700 rounded-full">$29M+ GMS</span>
-                            <span class="text-xs px-3 py-1 bg-purple-100 text-purple-700 rounded-full">NLP/CV</span>
-                            <span class="text-xs px-3 py-1 bg-blue-100 text-blue-700 rounded-full">Automation</span>
+                            <span class="text-xs px-3 py-1 bg-green-100 text-green-700 rounded-full">$29M+ Impact</span>
+                            <span class="text-xs px-3 py-1 bg-purple-100 text-purple-700 rounded-full">7× Scale</span>
                         </div>
                     </div>
                     <div class="timeline-dot"></div>
@@ -651,15 +660,14 @@ const portfolioHTML = `
                                 <i class="fas fa-university"></i>
                             </div>
                             <div>
-                                <h3 class="text-lg font-bold text-gray-800">Product Manager - Analytics & Growth (AVP)</h3>
+                                <h3 class="text-lg font-bold text-gray-800">PM - Analytics & Growth (AVP)</h3>
                                 <p class="text-indigo-500 font-medium">RBL Bank (FinTech)</p>
                             </div>
                         </div>
-                        <p class="text-gray-600 text-sm mb-3">Led growth initiatives including leads management, WhatsApp channel integration, and RFM segmentation. Saved $100K via A/B testing.</p>
+                        <p class="text-gray-600 text-sm mb-3">Led leads management, marketing analytics, WhatsApp adoption, and personalized offers experimentation.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-3 py-1 bg-green-100 text-green-700 rounded-full">5% Conversion ↑</span>
-                            <span class="text-xs px-3 py-1 bg-orange-100 text-orange-700 rounded-full">WhatsApp</span>
-                            <span class="text-xs px-3 py-1 bg-purple-100 text-purple-700 rounded-full">RFM Model</span>
+                            <span class="text-xs px-3 py-1 bg-orange-100 text-orange-700 rounded-full">$100K Savings</span>
                         </div>
                     </div>
                 </div>
@@ -677,10 +685,9 @@ const portfolioHTML = `
                                 <p class="text-indigo-500 font-medium">Indian School of Business</p>
                             </div>
                         </div>
-                        <p class="text-gray-600 text-sm mb-3">Post Graduate Programme in Information Technology & Marketing. Transitioned from QA Engineering to Product Management.</p>
+                        <p class="text-gray-600 text-sm mb-3">Post Graduate Programme in IT & Marketing. Career pivot from QA to Product Management.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-3 py-1 bg-blue-100 text-blue-700 rounded-full">IT & Marketing</span>
-                            <span class="text-xs px-3 py-1 bg-purple-100 text-purple-700 rounded-full">Career Pivot</span>
                         </div>
                     </div>
                     <div class="timeline-dot"></div>
@@ -702,58 +709,33 @@ const portfolioHTML = `
                                 <p class="text-indigo-500 font-medium">Amazon Development Center</p>
                             </div>
                         </div>
-                        <p class="text-gray-600 text-sm mb-3">Built automation frameworks for FBA supply chain. Delivered tools generating ~$34M in cost savings.</p>
+                        <p class="text-gray-600 text-sm mb-3">Built automation frameworks for FBA supply chain with ~$34M cost savings.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="text-xs px-3 py-1 bg-green-100 text-green-700 rounded-full">$34M Savings</span>
-                            <span class="text-xs px-3 py-1 bg-blue-100 text-blue-700 rounded-full">Automation</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Commonfloor -->
+                <!-- Commonfloor & Cognizant -->
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <span class="timeline-year">2013 - 2017</span>
-                        <div class="flex items-center gap-3 mb-3">
-                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-400 flex items-center justify-center text-white">
-                                <i class="fas fa-building"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-gray-800">QA Engineer</h3>
-                                <p class="text-indigo-500 font-medium">Commonfloor (Real Estate Tech)</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 text-sm mb-3">Led UI and service-level automation. Partnered on Quikr's New Cars integration and owned regression testing.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-xs px-3 py-1 bg-purple-100 text-purple-700 rounded-full">Test Automation</span>
-                            <span class="text-xs px-3 py-1 bg-blue-100 text-blue-700 rounded-full">Quikr Integration</span>
-                        </div>
-                    </div>
-                    <div class="timeline-dot"></div>
-                    <div class="w-[45%]"></div>
-                </div>
-
-                <!-- Cognizant -->
-                <div class="timeline-item">
-                    <div class="w-[45%]"></div>
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2012 - 2013</span>
+                        <span class="timeline-year">2012 - 2017</span>
                         <div class="flex items-center gap-3 mb-3">
                             <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-gray-400 to-gray-600 flex items-center justify-center text-white">
                                 <i class="fas fa-code"></i>
                             </div>
                             <div>
-                                <h3 class="text-lg font-bold text-gray-800">Programmer Analyst</h3>
-                                <p class="text-indigo-500 font-medium">Cognizant</p>
+                                <h3 class="text-lg font-bold text-gray-800">QA Engineer</h3>
+                                <p class="text-indigo-500 font-medium">Commonfloor & Cognizant</p>
                             </div>
                         </div>
-                        <p class="text-gray-600 text-sm mb-3">Led QA for telecom projects at Cox Communications. Started career in enterprise software development.</p>
+                        <p class="text-gray-600 text-sm mb-3">Started career in QA automation at Cognizant (telecom) and Commonfloor (real estate tech).</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full">Telecom</span>
-                            <span class="text-xs px-3 py-1 bg-blue-100 text-blue-700 rounded-full">HP QTP</span>
+                            <span class="text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full">Test Automation</span>
                         </div>
                     </div>
+                    <div class="timeline-dot"></div>
+                    <div class="w-[45%]"></div>
                 </div>
             </div>
         </section>
@@ -761,82 +743,30 @@ const portfolioHTML = `
         <!-- Projects Section -->
         <section id="projects" class="tab-content">
             <div class="flex items-center gap-4 mb-8">
-                <h2 class="text-3xl font-bold text-gray-800">Featured Projects</h2>
+                <h2 class="text-3xl font-bold text-gray-800">Projects</h2>
                 <svg class="section-illustration" viewBox="0 0 150 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="20" y="30" width="50" height="60" rx="6" fill="#E9D8FD"/>
                     <rect x="30" y="40" width="30" height="4" rx="2" fill="#667EEA"/>
                     <rect x="30" y="50" width="25" height="4" rx="2" fill="#9F7AEA"/>
-                    <rect x="30" y="60" width="20" height="4" rx="2" fill="#C4B5FD"/>
                     <rect x="80" y="20" width="50" height="70" rx="6" fill="#C6F6D5"/>
                     <circle cx="105" cy="45" r="15" fill="#9AE6B4"/>
                     <path d="M100 45 L105 50 L115 40" stroke="#38A169" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    <rect x="90" y="65" width="30" height="4" rx="2" fill="#68D391"/>
                 </svg>
             </div>
 
-            <div class="space-y-8">
-                <!-- Project 1: TrendRadar -->
-                <div class="project-card" style="border-left-color: #9F7AEA;">
-                    <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
-                        <div class="flex items-center gap-4">
-                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-white text-xl">
-                                <i class="fas fa-chart-area"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-800">TrendRadar - Demand Sensing Platform</h3>
-                                <p class="text-indigo-500">Trumee | 2024</p>
-                            </div>
-                        </div>
-                        <div class="metric-badge">
-                            <i class="fas fa-arrow-down mr-2"></i>15% Deadstock ↓
-                        </div>
-                    </div>
-                    
-                    <div class="grid md:grid-cols-2 gap-6 mt-6">
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-question-circle text-purple-400"></i>
-                                <span class="font-semibold text-gray-700">Why</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">Fashion inventory is notoriously difficult to predict, leading to deadstock and missed opportunities. Needed a data-driven approach to reduce waste and optimize purchasing.</p>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-lightbulb text-yellow-400"></i>
-                                <span class="font-semibold text-gray-700">What</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">AI-powered demand sensing tool that analyzes fashion trends from social media, sales data, and market signals to predict inventory needs 2-4 weeks ahead.</p>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-users text-blue-400"></i>
-                                <span class="font-semibold text-gray-700">For Whom</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">D2C fashion brands, inventory managers, and merchandising teams looking to optimize stock levels and reduce capital locked in unsold inventory.</p>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-cogs text-green-400"></i>
-                                <span class="font-semibold text-gray-700">How</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">Built using Python, ML models for time-series forecasting, social media trend APIs, and integrated with Shopify for real-time inventory updates.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-6 pt-4 border-t border-gray-100">
-                        <div class="flex items-center gap-2 mb-2">
-                            <i class="fas fa-chart-bar text-indigo-400"></i>
-                            <span class="font-semibold text-gray-700">Impact & Metrics</span>
-                        </div>
-                        <div class="flex flex-wrap gap-3">
-                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">15% Deadstock Reduction</span>
-                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #FED7AA 0%, #F6AD7B 100%);">12% Operational Cost ↓</span>
-                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #BEE3F8 0%, #90CDF4 100%);">70% Faster Execution</span>
-                        </div>
-                    </div>
+            <!-- AlphaSense Section -->
+            <div class="company-header mb-6">
+                <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center">
+                    <i class="fas fa-search-dollar text-xl"></i>
                 </div>
+                <div>
+                    <h3 class="text-xl font-bold">AlphaSense</h3>
+                    <p class="text-white/80 text-sm">Product Manager | B2B SaaS | 2023-2024</p>
+                </div>
+            </div>
 
-                <!-- Project 2: Client Analytics Platform -->
+            <div class="space-y-8 mb-12">
+                <!-- AlphaSense Project 1: Client Analytics Platform -->
                 <div class="project-card" style="border-left-color: #667EEA;">
                     <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
                         <div class="flex items-center gap-4">
@@ -845,7 +775,7 @@ const portfolioHTML = `
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold text-gray-800">Client Analytics Platform</h3>
-                                <p class="text-indigo-500">AlphaSense | 2023-2024</p>
+                                <p class="text-indigo-500">Customer-Facing Product</p>
                             </div>
                         </div>
                         <div class="metric-badge">
@@ -853,66 +783,74 @@ const portfolioHTML = `
                         </div>
                     </div>
                     
+                    <p class="text-gray-600 mb-4">Helping enterprise customers understand product value, adoption, and ROI through transparent usage analytics.</p>
+                    
                     <div class="grid md:grid-cols-2 gap-6 mt-6">
                         <div>
                             <div class="flex items-center gap-2 mb-2">
                                 <i class="fas fa-question-circle text-purple-400"></i>
                                 <span class="font-semibold text-gray-700">Why</span>
                             </div>
-                            <p class="text-gray-600 text-sm">Enterprise clients needed deeper insights into their usage patterns and ROI. The sales and CS teams were making decisions without proper data, leading to churn and missed upsell opportunities.</p>
+                            <p class="text-gray-600 text-sm">Customers lacked visibility into how value was being realized. CS teams relied on manual data pulls. Renewal and expansion conversations were qualitative, not data-backed.</p>
                         </div>
                         <div>
                             <div class="flex items-center gap-2 mb-2">
                                 <i class="fas fa-lightbulb text-yellow-400"></i>
                                 <span class="font-semibold text-gray-700">What</span>
                             </div>
-                            <p class="text-gray-600 text-sm">Comprehensive analytics platform providing client health scores, usage analytics, engagement metrics, and predictive churn indicators for enterprise SaaS customers.</p>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-users text-blue-400"></i>
-                                <span class="font-semibold text-gray-700">For Whom</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">20+ internal teams including Sales, Customer Success, Product, and Executive leadership. Also powered external-facing client dashboards.</p>
+                            <p class="text-gray-600 text-sm">End-to-end client-facing analytics platform exposing feature usage, engagement metrics, and actionable insights for Admins, Power Users, and Leadership.</p>
                         </div>
                         <div>
                             <div class="flex items-center gap-2 mb-2">
                                 <i class="fas fa-cogs text-green-400"></i>
                                 <span class="font-semibold text-gray-700">How</span>
                             </div>
-                            <p class="text-gray-600 text-sm">Built E2E data pipeline using BigQuery, implemented Google Dialogflow BI chatbot for self-service analytics, and created Tableau dashboards with real-time metrics.</p>
+                            <p class="text-gray-600 text-sm">Partnered with CS/Sales to map decision journeys. Designed "Insight Cards" to convert data → recommendations. Defined metric definitions aligned to customer outcomes.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-users text-blue-400"></i>
+                                <span class="font-semibold text-gray-700">With Whom</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Customer Success & Sales (discovery), Data Engineering (instrumentation), Frontend & Backend Engineers, Leadership stakeholders.</p>
                         </div>
                     </div>
                     
                     <div class="mt-6 pt-4 border-t border-gray-100">
-                        <div class="flex items-center gap-2 mb-2">
-                            <i class="fas fa-chart-bar text-indigo-400"></i>
-                            <span class="font-semibold text-gray-700">Impact & Metrics</span>
-                        </div>
                         <div class="flex flex-wrap gap-3">
-                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">$13.14M Projected ARR</span>
-                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #E9D8FD 0%, #C4B5FD 100%);">60% Error Reduction</span>
-                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #BEE3F8 0%, #90CDF4 100%);">2 Days Response Time ↓</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">7+ Pilot Clients</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #E9D8FD 0%, #C4B5FD 100%);">~$13.14M ARR</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #BEE3F8 0%, #90CDF4 100%);">Stronger Renewals</span>
                         </div>
+                    </div>
+                    
+                    <div class="judgment-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-brain text-purple-500"></i>
+                            <span class="font-semibold text-gray-700">PM Judgment</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Prioritized <strong>decision-driving insights</strong> over exhaustive analytics to ensure adoption.</p>
                     </div>
                 </div>
 
-                <!-- Project 3: Catalog Duplication Detection -->
-                <div class="project-card" style="border-left-color: #F6AD7B;">
+                <!-- AlphaSense Project 2: Unified Analytics Platform -->
+                <div class="project-card" style="border-left-color: #9F7AEA;">
                     <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
                         <div class="flex items-center gap-4">
-                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-400 to-yellow-400 flex items-center justify-center text-white text-xl">
-                                <i class="fab fa-amazon"></i>
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-white text-xl">
+                                <i class="fas fa-database"></i>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-gray-800">Catalog Duplication Detection (NLP/CV)</h3>
-                                <p class="text-indigo-500">Amazon | 2022-2023</p>
+                                <h3 class="text-xl font-bold text-gray-800">Unified Real-Time Analytics Platform</h3>
+                                <p class="text-indigo-500">Legacy → Event-Driven System</p>
                             </div>
                         </div>
                         <div class="metric-badge">
-                            <i class="fas fa-plus mr-2"></i>$4M GMS Added
+                            <i class="fas fa-bolt mr-2"></i>3M Events/Day
                         </div>
                     </div>
+                    
+                    <p class="text-gray-600 mb-4">Replacing fragile legacy analytics with a scalable, trusted real-time system for 20+ teams.</p>
                     
                     <div class="grid md:grid-cols-2 gap-6 mt-6">
                         <div>
@@ -920,60 +858,66 @@ const portfolioHTML = `
                                 <i class="fas fa-question-circle text-purple-400"></i>
                                 <span class="font-semibold text-gray-700">Why</span>
                             </div>
-                            <p class="text-gray-600 text-sm">Duplicate product listings created poor customer experience, diluted search results, and led to inventory inaccuracies. Manual detection was slow and error-prone with 5% error rate.</p>
+                            <p class="text-gray-600 text-sm">Legacy system was batch-driven, slow, and failed at scale. Data leakage and missing datapoints created low trust. ~3M events/day with ~30% MoM growth made reliability a business risk.</p>
                         </div>
                         <div>
                             <div class="flex items-center gap-2 mb-2">
                                 <i class="fas fa-lightbulb text-yellow-400"></i>
                                 <span class="font-semibold text-gray-700">What</span>
                             </div>
-                            <p class="text-gray-600 text-sm">Automated ML system using NLP for text matching and Computer Vision for image similarity to detect and merge duplicate product listings at scale.</p>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-users text-blue-400"></i>
-                                <span class="font-semibold text-gray-700">For Whom</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">Amazon Catalog team, sellers managing large inventories, and ultimately millions of customers who benefit from cleaner search results and accurate product information.</p>
+                            <p class="text-gray-600 text-sm">Led product transition to real-time, event-driven analytics supporting high-volume ingestion, data quality, and near real-time decision-making.</p>
                         </div>
                         <div>
                             <div class="flex items-center gap-2 mb-2">
                                 <i class="fas fa-cogs text-green-400"></i>
                                 <span class="font-semibold text-gray-700">How</span>
                             </div>
-                            <p class="text-gray-600 text-sm">Implemented NLP models for title/description similarity, CV models for product image matching, and created a confidence scoring system for automated vs. manual review routing.</p>
+                            <p class="text-gray-600 text-sm">Defined requirements for event ingestion, validation & schema consistency. Introduced data contracts. Balanced latency vs accuracy vs scalability. Standardized KPIs.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-users text-blue-400"></i>
+                                <span class="font-semibold text-gray-700">With Whom</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Data Engineering, Platform & Infra teams, Product & Engineering consumers, Leadership for migration planning.</p>
                         </div>
                     </div>
                     
                     <div class="mt-6 pt-4 border-t border-gray-100">
-                        <div class="flex items-center gap-2 mb-2">
-                            <i class="fas fa-chart-bar text-indigo-400"></i>
-                            <span class="font-semibold text-gray-700">Impact & Metrics</span>
-                        </div>
                         <div class="flex flex-wrap gap-3">
-                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">Error Rate: 5% → 2%</span>
-                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #FED7AA 0%, #F6AD7B 100%);">$4M GMS Added</span>
-                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #E9D8FD 0%, #C4B5FD 100%);">Automated Detection</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">~3M Events/Day</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #FED7AA 0%, #F6AD7B 100%);">60% Error Reduction</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #BEE3F8 0%, #90CDF4 100%);">20+ Teams Enabled</span>
                         </div>
+                    </div>
+                    
+                    <div class="judgment-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-brain text-purple-500"></i>
+                            <span class="font-semibold text-gray-700">PM Judgment</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Chose <strong>data trust over speed</strong> initially to restore confidence in analytics.</p>
                     </div>
                 </div>
 
-                <!-- Project 4: SKU Recycling System -->
+                <!-- AlphaSense Project 3: BI Chatbot -->
                 <div class="project-card" style="border-left-color: #68D391;">
                     <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
                         <div class="flex items-center gap-4">
                             <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-400 to-teal-400 flex items-center justify-center text-white text-xl">
-                                <i class="fas fa-recycle"></i>
+                                <i class="fas fa-robot"></i>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-gray-800">SKU Recycling System</h3>
-                                <p class="text-indigo-500">Amazon | 2022-2023</p>
+                                <h3 class="text-xl font-bold text-gray-800">BI Chatbot for Internal Analytics</h3>
+                                <p class="text-indigo-500">Self-Serve Analytics Enablement</p>
                             </div>
                         </div>
                         <div class="metric-badge">
-                            <i class="fas fa-dollar-sign mr-2"></i>$20M GMS Value
+                            <i class="fas fa-clock mr-2"></i>2 Days → Hours
                         </div>
                     </div>
+                    
+                    <p class="text-gray-600 mb-4">Reducing analyst dependency via conversational UX for natural language data queries.</p>
                     
                     <div class="grid md:grid-cols-2 gap-6 mt-6">
                         <div>
@@ -981,60 +925,337 @@ const portfolioHTML = `
                                 <i class="fas fa-question-circle text-purple-400"></i>
                                 <span class="font-semibold text-gray-700">Why</span>
                             </div>
-                            <p class="text-gray-600 text-sm">Discontinued SKUs with valuable search rankings and customer reviews were being lost. New listings had to build credibility from scratch, wasting existing customer trust.</p>
+                            <p class="text-gray-600 text-sm">Teams repeatedly depended on analysts for SQL queries, metric clarifications, and recurring questions. This slowed decisions and overloaded the analytics team.</p>
                         </div>
                         <div>
                             <div class="flex items-center gap-2 mb-2">
                                 <i class="fas fa-lightbulb text-yellow-400"></i>
                                 <span class="font-semibold text-gray-700">What</span>
                             </div>
-                            <p class="text-gray-600 text-sm">Intelligent system to identify high-value discontinued SKUs and recycle them for similar new products, preserving SEO value, reviews, and customer trust.</p>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-users text-blue-400"></i>
-                                <span class="font-semibold text-gray-700">For Whom</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">Sellers launching new products, Amazon category managers, and customers who benefit from accurate product history and trusted reviews.</p>
+                            <p class="text-gray-600 text-sm">Conversational BI chatbot enabling non-technical teams to query data using natural language with Dialogflow integration.</p>
                         </div>
                         <div>
                             <div class="flex items-center gap-2 mb-2">
                                 <i class="fas fa-cogs text-green-400"></i>
                                 <span class="font-semibold text-gray-700">How</span>
                             </div>
-                            <p class="text-gray-600 text-sm">Built SKU value scoring algorithm, product similarity matching, and automated workflow for SKU reassignment with proper audit trails.</p>
+                            <p class="text-gray-600 text-sm">Identified high-frequency queries. Designed conversational flows, fallbacks, and clarification states. Improved intent accuracy from ~72% → ~88%.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-users text-blue-400"></i>
+                                <span class="font-semibold text-gray-700">With Whom</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Analytics team, Data Engineering, Backend Engineers, Business stakeholders.</p>
                         </div>
                     </div>
                     
                     <div class="mt-6 pt-4 border-t border-gray-100">
-                        <div class="flex items-center gap-2 mb-2">
-                            <i class="fas fa-chart-bar text-indigo-400"></i>
-                            <span class="font-semibold text-gray-700">Impact & Metrics</span>
-                        </div>
                         <div class="flex flex-wrap gap-3">
-                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">$20M GMS Preserved</span>
-                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #BEE3F8 0%, #90CDF4 100%);">Reviews Retained</span>
-                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #FED7AA 0%, #F6AD7B 100%);">SEO Value Preserved</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">~2 Days Response ↓</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #E9D8FD 0%, #C4B5FD 100%);">72%→88% Accuracy</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #FED7AA 0%, #F6AD7B 100%);">30-40% Requests ↓</span>
                         </div>
+                    </div>
+                    
+                    <div class="judgment-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-brain text-purple-500"></i>
+                            <span class="font-semibold text-gray-700">PM Judgment</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Designed conservative fallbacks to favor <strong>accuracy over speed</strong>.</p>
                     </div>
                 </div>
 
-                <!-- Project 5: Leads Management Module -->
-                <div class="project-card" style="border-left-color: #9AE6B4;">
+                <!-- AlphaSense Project 4: NPS Infrastructure -->
+                <div class="project-card" style="border-left-color: #F6AD7B;">
+                    <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-400 to-yellow-400 flex items-center justify-center text-white text-xl">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">NPS Infrastructure Optimization</h3>
+                                <p class="text-indigo-500">Feedback Signal Quality</p>
+                            </div>
+                        </div>
+                        <div class="metric-badge">
+                            <i class="fas fa-arrow-up mr-2"></i>6% Response ↑
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-4">Improving feedback signal quality in enterprise SaaS through better survey infrastructure.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-question-circle text-purple-400"></i>
+                                <span class="font-semibold text-gray-700">Why</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Existing NPS setup had low response rates, poor segmentation, and limited actionability for product decisions.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-lightbulb text-yellow-400"></i>
+                                <span class="font-semibold text-gray-700">What</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Redesigned NPS collection and analytics infrastructure to improve signal quality and downstream usability.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-3">
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">~6% Response ↑ in 3.5mo</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #BEE3F8 0%, #90CDF4 100%);">Better Segmentation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Amazon Section -->
+            <div class="company-header amazon mb-6">
+                <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center">
+                    <i class="fab fa-amazon text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">Amazon</h3>
+                    <p class="text-white/80 text-sm">Product Manager | Marketplace Scale | 2022-2023</p>
+                </div>
+            </div>
+
+            <div class="space-y-8 mb-12">
+                <!-- Amazon Project 1: Catalog Deduplication -->
+                <div class="project-card" style="border-left-color: #FF9900;">
+                    <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-400 to-yellow-400 flex items-center justify-center text-white text-xl">
+                                <i class="fas fa-clone"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">Catalog Deduplication (NLP + CV)</h3>
+                                <p class="text-indigo-500">ML-Assisted Automation</p>
+                            </div>
+                        </div>
+                        <div class="metric-badge" style="background: linear-gradient(135deg, #FED7AA 0%, #F6AD7B 100%);">
+                            <i class="fas fa-dollar-sign mr-2"></i>$4M QoQ GMS
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-4">Improving catalog quality and discoverability at marketplace scale using ML-assisted deduplication.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-question-circle text-purple-400"></i>
+                                <span class="font-semibold text-gray-700">Why</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Duplicate SKUs degraded CX, fragmented reviews, and created merchandising inefficiencies. Manual review was slow, error-prone, and couldn't scale.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-lightbulb text-yellow-400"></i>
+                                <span class="font-semibold text-gray-700">What</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">End-to-end automated deduplication using NLP + Computer Vision with confidence-based automation and human-in-the-loop for low-confidence cases.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-cogs text-green-400"></i>
+                                <span class="font-semibold text-gray-700">How</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Combined image similarity (CNN embeddings), text similarity (cosine), and confidence scoring. Built review workflow for approve/reject/merge decisions.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-users text-blue-400"></i>
+                                <span class="font-semibold text-gray-700">With Whom</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">ML Engineers, Catalog Operations, Platform Engineers, Business stakeholders.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-3">
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">7× Scale (13K→90K)</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #FED7AA 0%, #F6AD7B 100%);">7 Days → 1 Day</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #E9D8FD 0%, #C4B5FD 100%);">5%→2% Error Rate</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #BEE3F8 0%, #90CDF4 100%);">~$4M QoQ GMS</span>
+                        </div>
+                    </div>
+                    
+                    <div class="judgment-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-brain text-purple-500"></i>
+                            <span class="font-semibold text-gray-700">PM Judgment</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Chose <strong>confidence-based automation with human oversight</strong> to avoid costly false positives while achieving scale.</p>
+                    </div>
+                </div>
+
+                <!-- Amazon Project 2: Defect Removal Automation -->
+                <div class="project-card" style="border-left-color: #48BB78;">
+                    <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-400 to-teal-400 flex items-center justify-center text-white text-xl">
+                                <i class="fas fa-check-double"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">Defect Removal Automation</h3>
+                                <p class="text-indigo-500">Buyability & Discoverability</p>
+                            </div>
+                        </div>
+                        <div class="metric-badge" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">
+                            <i class="fas fa-dollar-sign mr-2"></i>$20M GMS / 6mo
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-4">Improving buyability and discoverability of SKUs through automated defect-resolution workflows.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-question-circle text-purple-400"></i>
+                                <span class="font-semibold text-gray-700">Why</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Significant SKUs were delisted due to catalog defects, still commercially viable, but invisible to customers due to manual resolution delays → lost sales and poor seller experience.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-lightbulb text-yellow-400"></i>
+                                <span class="font-semibold text-gray-700">What</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Automated defect-resolution workflows that identify eligible SKUs, resolve common defect patterns, and restore buyability at scale.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-cogs text-green-400"></i>
+                                <span class="font-semibold text-gray-700">How</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Identified high-frequency defect categories. Designed 3 automated workflows: detection → validation → resolution. Built safeguards for incorrect reinstatements.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-users text-blue-400"></i>
+                                <span class="font-semibold text-gray-700">With Whom</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Catalog Ops teams, Platform & tooling engineers, Seller experience stakeholders.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-3">
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">~$20M GMS / 6mo</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #E9D8FD 0%, #C4B5FD 100%);">4× Scaled</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #BEE3F8 0%, #90CDF4 100%);">3 Workflows</span>
+                        </div>
+                    </div>
+                    
+                    <div class="judgment-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-brain text-purple-500"></i>
+                            <span class="font-semibold text-gray-700">PM Judgment</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Focused on <strong>high-confidence defect categories first</strong> to maximize impact while controlling risk.</p>
+                    </div>
+                </div>
+
+                <!-- Amazon Project 3: A/B Testing Lookbook -->
+                <div class="project-card" style="border-left-color: #90CDF4;">
+                    <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-300 to-cyan-400 flex items-center justify-center text-white text-xl">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">A/B Testing for Physical Lookbook</h3>
+                                <p class="text-indigo-500">Offline Marketing Optimization</p>
+                            </div>
+                        </div>
+                        <div class="metric-badge" style="background: linear-gradient(135deg, #BEE3F8 0%, #90CDF4 100%);">
+                            <i class="fas fa-piggy-bank mr-2"></i>$5M Savings
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-4">Optimizing offline marketing efficiency using experimentation and household-level deduplication.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-question-circle text-purple-400"></i>
+                                <span class="font-semibold text-gray-700">Why</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Physical lookbook campaigns had high printing/distribution costs, risked waste from duplicate recipients, and lacked precise household-level targeting.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-lightbulb text-yellow-400"></i>
+                                <span class="font-semibold text-gray-700">What</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">A/B testing framework with household-level deduplication to measure incremental lift and optimize campaign reach and ROI.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-cogs text-green-400"></i>
+                                <span class="font-semibold text-gray-700">How</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Built deduplication algorithm for household-level targeting. Created test vs control cohorts. Tracked incremental conversions and sales uplift.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-users text-blue-400"></i>
+                                <span class="font-semibold text-gray-700">With Whom</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Marketing teams, Data science & analytics, Campaign operations, Finance stakeholders.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-3">
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">$5M Cost Savings</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #FED7AA 0%, #F6AD7B 100%);">50% YoY Sales ↑</span>
+                        </div>
+                    </div>
+                    
+                    <div class="judgment-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-brain text-purple-500"></i>
+                            <span class="font-semibold text-gray-700">PM Judgment</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Balanced <strong>cost efficiency with conversion impact</strong>, ensuring savings did not erode business outcomes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RBL Bank Section -->
+            <div class="company-header rbl mb-6">
+                <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center">
+                    <i class="fas fa-university text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">RBL Bank</h3>
+                    <p class="text-white/80 text-sm">Product Manager - Analytics & Growth (AVP) | 2020-2022</p>
+                </div>
+            </div>
+
+            <div class="space-y-8">
+                <!-- RBL Project 1: Leads Management -->
+                <div class="project-card" style="border-left-color: #48BB78;">
                     <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
                         <div class="flex items-center gap-4">
                             <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center text-white text-xl">
                                 <i class="fas fa-funnel-dollar"></i>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-gray-800">Leads Management & Conversion System</h3>
-                                <p class="text-indigo-500">RBL Bank | 2020-2022</p>
+                                <h3 class="text-xl font-bold text-gray-800">Leads Management Module</h3>
+                                <p class="text-indigo-500">Contact Center Optimization</p>
                             </div>
                         </div>
-                        <div class="metric-badge">
+                        <div class="metric-badge" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">
                             <i class="fas fa-arrow-up mr-2"></i>5% Conversion ↑
                         </div>
                     </div>
+                    
+                    <p class="text-gray-600 mb-4">Real-time leads management enabling unified leads, prioritization, and improved agent productivity.</p>
                     
                     <div class="grid md:grid-cols-2 gap-6 mt-6">
                         <div>
@@ -1042,41 +1263,215 @@ const portfolioHTML = `
                                 <i class="fas fa-question-circle text-purple-400"></i>
                                 <span class="font-semibold text-gray-700">Why</span>
                             </div>
-                            <p class="text-gray-600 text-sm">Banking leads were being lost due to poor tracking, inconsistent follow-ups, and lack of channel optimization. Sales teams needed better tools to convert prospects.</p>
+                            <p class="text-gray-600 text-sm">Sales conversion limited by delayed lead visibility, manual prioritization, and fragmented systems across channels.</p>
                         </div>
                         <div>
                             <div class="flex items-center gap-2 mb-2">
                                 <i class="fas fa-lightbulb text-yellow-400"></i>
                                 <span class="font-semibold text-gray-700">What</span>
                             </div>
-                            <p class="text-gray-600 text-sm">Comprehensive leads management system with scoring, automated routing, multi-channel tracking (including WhatsApp), and conversion analytics.</p>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-users text-blue-400"></i>
-                                <span class="font-semibold text-gray-700">For Whom</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">RBL Bank sales teams, relationship managers, and marketing teams responsible for customer acquisition and retention.</p>
+                            <p class="text-gray-600 text-sm">Real-time leads management module unifying leads across channels with prioritization based on intent and eligibility.</p>
                         </div>
                         <div>
                             <div class="flex items-center gap-2 mb-2">
                                 <i class="fas fa-cogs text-green-400"></i>
                                 <span class="font-semibold text-gray-700">How</span>
                             </div>
-                            <p class="text-gray-600 text-sm">Built lead scoring model, integrated WhatsApp Business API (3.5% adoption increase), implemented RFM segmentation for debit cards, and created A/B testing framework.</p>
+                            <p class="text-gray-600 text-sm">Defined end-to-end lead lifecycle (capture → assignment → conversion). Designed agent workflows and escalation states. Integrated conversion analytics.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="judgment-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-brain text-purple-500"></i>
+                            <span class="font-semibold text-gray-700">PM Judgment</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Prioritized <strong>speed and clarity for agents</strong> over complex scoring models in early phases.</p>
+                    </div>
+                </div>
+
+                <!-- RBL Project 2: Marketing Analytics Automation -->
+                <div class="project-card" style="border-left-color: #667EEA;">
+                    <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center text-white text-xl">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">Marketing Analytics Automation</h3>
+                                <p class="text-indigo-500">Campaign Performance Tracking</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-4">End-to-end marketing analytics framework for campaign lifecycle tracking and attribution.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-question-circle text-purple-400"></i>
+                                <span class="font-semibold text-gray-700">Why</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Campaign performance tracking was manual, delayed, inconsistent across channels, and difficult to attribute to outcomes.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-lightbulb text-yellow-400"></i>
+                                <span class="font-semibold text-gray-700">What</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Automated analytics framework covering campaign lifecycle, attribution to customer metrics, and self-serve dashboards.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="judgment-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-brain text-purple-500"></i>
+                            <span class="font-semibold text-gray-700">PM Judgment</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Focused on <strong>actionable metrics</strong> instead of exhaustive reporting.</p>
+                    </div>
+                </div>
+
+                <!-- RBL Project 3: Pre-Approved Credit Card -->
+                <div class="project-card" style="border-left-color: #F6AD7B;">
+                    <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-400 to-yellow-400 flex items-center justify-center text-white text-xl">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">Pre-Approved Credit Card Journey</h3>
+                                <p class="text-indigo-500">Digital Channel Integration</p>
+                            </div>
+                        </div>
+                        <div class="metric-badge" style="background: linear-gradient(135deg, #FED7AA 0%, #F6AD7B 100%);">
+                            <i class="fas fa-arrow-up mr-2"></i>0.65% Conversion ↑
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-4">Segmentation-driven pre-approved credit card journey integrated across digital channels.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-question-circle text-purple-400"></i>
+                                <span class="font-semibold text-gray-700">Why</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Pre-approved offers had suboptimal targeting and low conversion despite eligibility.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-cogs text-green-400"></i>
+                                <span class="font-semibold text-gray-700">How</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Defined eligibility and segmentation logic. Designed customer flows from offer → application → approval. Integrated backend decisioning.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="judgment-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-brain text-purple-500"></i>
+                            <span class="font-semibold text-gray-700">PM Judgment</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Optimized for <strong>low-friction user experience</strong> over aggressive upsell.</p>
+                    </div>
+                </div>
+
+                <!-- RBL Project 4: WhatsApp Channel -->
+                <div class="project-card" style="border-left-color: #48BB78;">
+                    <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-white text-xl">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">WhatsApp Channel Adoption</h3>
+                                <p class="text-indigo-500">Predictive Targeting</p>
+                            </div>
+                        </div>
+                        <div class="metric-badge" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">
+                            <i class="fas fa-arrow-up mr-2"></i>3.5% QoQ ↑
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-4">Driving WhatsApp adoption as a core engagement channel using ensemble classification models.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-question-circle text-purple-400"></i>
+                                <span class="font-semibold text-gray-700">Why</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">WhatsApp was underutilized as a customer communication channel despite high reach.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-cogs text-green-400"></i>
+                                <span class="font-semibold text-gray-700">How</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Designed ensemble classification model to identify likely adopters. Integrated WhatsApp into existing workflows. Coordinated cross-team rollout.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="judgment-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-brain text-purple-500"></i>
+                            <span class="font-semibold text-gray-700">PM Judgment</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Used <strong>model-assisted targeting</strong> rather than blanket outreach to protect CX.</p>
+                    </div>
+                </div>
+
+                <!-- RBL Project 5: Personalized Offers -->
+                <div class="project-card" style="border-left-color: #9F7AEA;">
+                    <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-white text-xl">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">Personalized Offers & Experimentation</h3>
+                                <p class="text-indigo-500">RFM Modeling & A/B Testing</p>
+                            </div>
+                        </div>
+                        <div class="metric-badge" style="background: linear-gradient(135deg, #E9D8FD 0%, #C4B5FD 100%);">
+                            <i class="fas fa-piggy-bank mr-2"></i>$100K+ Savings
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-4">Personalized offer strategies using RFM modeling and controlled A/B testing for vouchers.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-question-circle text-purple-400"></i>
+                                <span class="font-semibold text-gray-700">Why</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Generic offers led to low engagement and wasted incentive spend.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-cogs text-green-400"></i>
+                                <span class="font-semibold text-gray-700">How</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Built RFM-based segments. Designed experiments to measure incremental lift. Selected optimal voucher strategies based on ROI.</p>
                         </div>
                     </div>
                     
                     <div class="mt-6 pt-4 border-t border-gray-100">
-                        <div class="flex items-center gap-2 mb-2">
-                            <i class="fas fa-chart-bar text-indigo-400"></i>
-                            <span class="font-semibold text-gray-700">Impact & Metrics</span>
-                        </div>
                         <div class="flex flex-wrap gap-3">
-                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">5% Conversion Increase</span>
-                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #BEE3F8 0%, #90CDF4 100%);">3.5% WhatsApp Adoption</span>
-                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #FED7AA 0%, #F6AD7B 100%);">$100K A/B Test Savings</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">2.5% Spending ↑</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #FED7AA 0%, #F6AD7B 100%);">$100K Voucher Savings</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #BEE3F8 0%, #90CDF4 100%);">$0.23M Annual Savings</span>
                         </div>
+                    </div>
+                    
+                    <div class="judgment-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-brain text-purple-500"></i>
+                            <span class="font-semibold text-gray-700">PM Judgment</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Balanced <strong>personalization depth</strong> with <strong>operational simplicity</strong>.</p>
                     </div>
                 </div>
             </div>
@@ -1111,9 +1506,7 @@ const portfolioHTML = `
                                 <p class="text-indigo-500">EdTech | GenAI | Multimodal AI</p>
                             </div>
                         </div>
-                        <div class="flex gap-2">
-                            <span class="status-badge active"><i class="fas fa-check-circle mr-1"></i>Completed</span>
-                        </div>
+                        <span class="status-badge active"><i class="fas fa-check-circle mr-1"></i>Completed</span>
                     </div>
                     
                     <p class="text-gray-600 mb-4">Personalized explanations, voice delivery, and curriculum-aligned learning using GenAI</p>
@@ -1132,14 +1525,14 @@ const portfolioHTML = `
                                 <i class="fas fa-question-circle text-purple-400"></i>
                                 <span class="font-semibold text-gray-700">Why</span>
                             </div>
-                            <p class="text-gray-600 text-sm">Traditional EdTech platforms struggle with one-size-fits-all explanations, language barriers, high cost of video-based content, and poor engagement for conceptual subjects.</p>
+                            <p class="text-gray-600 text-sm">Traditional EdTech struggles with one-size-fits-all explanations, language barriers, high video costs, and poor engagement.</p>
                         </div>
                         <div>
                             <div class="flex items-center gap-2 mb-2">
                                 <i class="fas fa-lightbulb text-yellow-400"></i>
                                 <span class="font-semibold text-gray-700">What</span>
                             </div>
-                            <p class="text-gray-600 text-sm">AI-powered learning assistant that generates adaptive explanations using LLMs, grounds responses in curriculum content via RAG, and converts to natural-sounding multilingual speech.</p>
+                            <p class="text-gray-600 text-sm">AI assistant generating adaptive explanations via LLMs, grounded in curriculum via RAG, with multilingual TTS delivery.</p>
                         </div>
                     </div>
                     
@@ -1151,36 +1544,15 @@ const portfolioHTML = `
                         <div class="grid md:grid-cols-3 gap-4">
                             <div class="bg-white p-3 rounded-lg">
                                 <div class="text-xs font-semibold text-indigo-500 mb-1">Content Layer</div>
-                                <p class="text-xs text-gray-600">Structured curriculum content stored as modular chunks for retrieval</p>
+                                <p class="text-xs text-gray-600">Structured curriculum as modular chunks for retrieval</p>
                             </div>
                             <div class="bg-white p-3 rounded-lg">
                                 <div class="text-xs font-semibold text-purple-500 mb-1">LLM Layer</div>
-                                <p class="text-xs text-gray-600">Layered prompts (system, concept, learner context) + RAG for factual grounding</p>
+                                <p class="text-xs text-gray-600">Layered prompts (system, concept, learner) + RAG grounding</p>
                             </div>
                             <div class="bg-white p-3 rounded-lg">
                                 <div class="text-xs font-semibold text-green-500 mb-1">Voice Layer</div>
-                                <p class="text-xs text-gray-600">TTS pipeline for scalable multilingual audio delivery</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-6 pt-4 border-t border-gray-100">
-                        <div class="flex items-center gap-2 mb-2">
-                            <i class="fas fa-tasks text-indigo-400"></i>
-                            <span class="font-semibold text-gray-700">Evaluation & Metrics</span>
-                        </div>
-                        <div class="grid md:grid-cols-3 gap-4 text-sm">
-                            <div>
-                                <span class="text-gray-500">LLM Eval:</span>
-                                <span class="text-gray-700"> Accuracy, hallucination rate, coherence</span>
-                            </div>
-                            <div>
-                                <span class="text-gray-500">Pedagogy:</span>
-                                <span class="text-gray-700"> Concept coverage, grade-appropriateness</span>
-                            </div>
-                            <div>
-                                <span class="text-gray-500">Voice:</span>
-                                <span class="text-gray-700"> Latency, pronunciation, comprehension</span>
+                                <p class="text-xs text-gray-600">TTS pipeline for scalable multilingual audio</p>
                             </div>
                         </div>
                     </div>
@@ -1190,7 +1562,7 @@ const portfolioHTML = `
                             <i class="fas fa-brain text-purple-500"></i>
                             <span class="font-semibold text-gray-700">AI PM Judgment</span>
                         </div>
-                        <p class="text-gray-600 text-sm">Chose <strong>RAG + prompting</strong> over fine-tuning initially to maximize iteration speed and control costs while maintaining factual accuracy.</p>
+                        <p class="text-gray-600 text-sm">Chose <strong>RAG + prompting</strong> over fine-tuning to maximize iteration speed and control costs.</p>
                     </div>
                 </div>
 
@@ -1206,9 +1578,7 @@ const portfolioHTML = `
                                 <p class="text-indigo-500">EdTech | Agent Systems | Personalization</p>
                             </div>
                         </div>
-                        <div class="flex gap-2">
-                            <span class="status-badge progress"><i class="fas fa-spinner mr-1"></i>In Progress</span>
-                        </div>
+                        <span class="status-badge progress"><i class="fas fa-spinner mr-1"></i>In Progress</span>
                     </div>
                     
                     <p class="text-gray-600 mb-4">Helping learners build AI skills through guided journeys and hands-on practice</p>
@@ -1217,7 +1587,6 @@ const portfolioHTML = `
                         <span class="tech-pill"><i class="fas fa-users-cog mr-1"></i>Multi-Agent</span>
                         <span class="tech-pill"><i class="fas fa-brain mr-1"></i>LangGraph</span>
                         <span class="tech-pill"><i class="fas fa-memory mr-1"></i>Memory Layer</span>
-                        <span class="tech-pill"><i class="fas fa-chart-line mr-1"></i>Adaptive</span>
                     </div>
                     
                     <div class="grid md:grid-cols-2 gap-6">
@@ -1226,39 +1595,14 @@ const portfolioHTML = `
                                 <i class="fas fa-question-circle text-purple-400"></i>
                                 <span class="font-semibold text-gray-700">Why</span>
                             </div>
-                            <p class="text-gray-600 text-sm">AI learning is fragmented: tools-first instead of concept-first, no structured progression, and low retention after tutorials.</p>
+                            <p class="text-gray-600 text-sm">AI learning is fragmented: tools-first, no structured progression, low retention after tutorials.</p>
                         </div>
                         <div>
                             <div class="flex items-center gap-2 mb-2">
                                 <i class="fas fa-lightbulb text-yellow-400"></i>
                                 <span class="font-semibold text-gray-700">What</span>
                             </div>
-                            <p class="text-gray-600 text-sm">AI-native learning app that breaks AI into progressive paths, uses agents to simulate mentors/reviewers/explainers, and adapts difficulty dynamically.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="architecture-block mt-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <i class="fas fa-sitemap text-orange-500"></i>
-                            <span class="font-semibold text-gray-700">Planned Architecture</span>
-                        </div>
-                        <div class="grid md:grid-cols-4 gap-3">
-                            <div class="bg-white p-3 rounded-lg text-center">
-                                <i class="fas fa-chalkboard-teacher text-indigo-400 text-lg mb-1"></i>
-                                <div class="text-xs font-semibold text-gray-700">Tutor Agent</div>
-                            </div>
-                            <div class="bg-white p-3 rounded-lg text-center">
-                                <i class="fas fa-clipboard-check text-green-400 text-lg mb-1"></i>
-                                <div class="text-xs font-semibold text-gray-700">Practice Evaluator</div>
-                            </div>
-                            <div class="bg-white p-3 rounded-lg text-center">
-                                <i class="fas fa-comments text-purple-400 text-lg mb-1"></i>
-                                <div class="text-xs font-semibold text-gray-700">Feedback Agent</div>
-                            </div>
-                            <div class="bg-white p-3 rounded-lg text-center">
-                                <i class="fas fa-database text-orange-400 text-lg mb-1"></i>
-                                <div class="text-xs font-semibold text-gray-700">Memory Layer</div>
-                            </div>
+                            <p class="text-gray-600 text-sm">AI-native app with progressive paths, agent-based mentors/reviewers, and dynamic difficulty adaptation.</p>
                         </div>
                     </div>
                     
@@ -1267,11 +1611,11 @@ const portfolioHTML = `
                             <i class="fas fa-brain text-purple-500"></i>
                             <span class="font-semibold text-gray-700">AI PM Focus</span>
                         </div>
-                        <p class="text-gray-600 text-sm">Designing <strong>learning systems</strong>, not just AI features. Focus on progressive task scaffolding and concept retention across sessions.</p>
+                        <p class="text-gray-600 text-sm">Designing <strong>learning systems</strong>, not just AI features.</p>
                     </div>
                 </div>
 
-                <!-- AI Project 3: TrendRadar (Detailed) -->
+                <!-- AI Project 3: TrendRadar -->
                 <div class="ai-card" style="border-left-color: #9F7AEA;">
                     <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
                         <div class="flex items-center gap-4">
@@ -1279,16 +1623,14 @@ const portfolioHTML = `
                                 <i class="fas fa-chart-line"></i>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-gray-800">TrendRadar — Holistic Fashion Trend Intelligence</h3>
+                                <h3 class="text-xl font-bold text-gray-800">TrendRadar — Fashion Trend Intelligence</h3>
                                 <p class="text-indigo-500">Retail | AI | Demand Sensing</p>
                             </div>
                         </div>
-                        <div class="flex gap-2">
-                            <span class="status-badge active"><i class="fas fa-check-circle mr-1"></i>Active</span>
-                        </div>
+                        <span class="status-badge active"><i class="fas fa-check-circle mr-1"></i>Active</span>
                     </div>
                     
-                    <p class="text-gray-600 mb-4">Identifying high-conviction fashion trends before they hit mass adoption</p>
+                    <p class="text-gray-600 mb-4">Identifying high-conviction fashion trends before mass adoption using multi-signal correlation</p>
                     
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="tech-pill"><i class="fas fa-eye mr-1"></i>Gemini Vision</span>
@@ -1297,68 +1639,29 @@ const portfolioHTML = `
                         <span class="tech-pill"><i class="fas fa-project-diagram mr-1"></i>n8n</span>
                     </div>
                     
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-question-circle text-purple-400"></i>
-                                <span class="font-semibold text-gray-700">Why</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">Fashion decisions are reactive: brands chase trends too late, search data alone is noisy, and inventory risk is high.</p>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-lightbulb text-yellow-400"></i>
-                                <span class="font-semibold text-gray-700">What</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">Holistic Trend Intelligence System that correlates signals across the full trend lifecycle — only trends validated across multiple layers are promoted.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="architecture-block mt-6">
+                    <div class="architecture-block mt-4">
                         <div class="flex items-center gap-2 mb-3">
                             <i class="fas fa-layer-group text-purple-500"></i>
                             <span class="font-semibold text-gray-700">Signal Correlation Strategy</span>
                         </div>
                         <div class="grid md:grid-cols-4 gap-3">
-                            <div class="bg-white p-3 rounded-lg">
-                                <div class="text-xs font-semibold text-pink-500 mb-1"><i class="fas fa-heart mr-1"></i>Social (Spark)</div>
-                                <p class="text-xs text-gray-600">Visual pattern detection from Instagram & Pinterest</p>
+                            <div class="bg-white p-3 rounded-lg text-center">
+                                <i class="fas fa-heart text-pink-400 mb-1"></i>
+                                <div class="text-xs font-semibold">Social (Spark)</div>
                             </div>
-                            <div class="bg-white p-3 rounded-lg">
-                                <div class="text-xs font-semibold text-blue-500 mb-1"><i class="fas fa-search mr-1"></i>Search (Intent)</div>
-                                <p class="text-xs text-gray-600">Keyword velocity from Myntra + Google Trends</p>
+                            <div class="bg-white p-3 rounded-lg text-center">
+                                <i class="fas fa-search text-blue-400 mb-1"></i>
+                                <div class="text-xs font-semibold">Search (Intent)</div>
                             </div>
-                            <div class="bg-white p-3 rounded-lg">
-                                <div class="text-xs font-semibold text-green-500 mb-1"><i class="fas fa-boxes mr-1"></i>Inventory (Reality)</div>
-                                <p class="text-xs text-gray-600">Sell-out tracking in New Arrivals within 48hrs</p>
+                            <div class="bg-white p-3 rounded-lg text-center">
+                                <i class="fas fa-boxes text-green-400 mb-1"></i>
+                                <div class="text-xs font-semibold">Inventory (Reality)</div>
                             </div>
-                            <div class="bg-white p-3 rounded-lg">
-                                <div class="text-xs font-semibold text-orange-500 mb-1"><i class="fas fa-film mr-1"></i>Culture (Multiplier)</div>
-                                <p class="text-xs text-gray-600">Bollywood & OTT releases as demand amplifiers</p>
+                            <div class="bg-white p-3 rounded-lg text-center">
+                                <i class="fas fa-film text-orange-400 mb-1"></i>
+                                <div class="text-xs font-semibold">Culture (Multiplier)</div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="mt-6 pt-4 border-t border-gray-100">
-                        <div class="flex items-center gap-2 mb-2">
-                            <i class="fas fa-dna text-purple-400"></i>
-                            <span class="font-semibold text-gray-700">Pattern DNA Logic</span>
-                        </div>
-                        <p class="text-gray-600 text-sm mb-3">Each product/image is decomposed into structured attributes creating a standardized Trend DNA for comparison:</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="skill-tag text-xs">Category</span>
-                            <span class="skill-tag text-xs">Neckline</span>
-                            <span class="skill-tag text-xs">Sleeves</span>
-                            <span class="skill-tag text-xs">Length</span>
-                            <span class="skill-tag text-xs">Fabric</span>
-                            <span class="skill-tag text-xs">Print</span>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-4 flex flex-wrap gap-4 text-sm">
-                        <div><span class="text-gray-500">Trend Lead Time:</span> <span class="font-semibold text-indigo-600">14-21 days</span></div>
-                        <div><span class="text-gray-500">Target Cost:</span> <span class="font-semibold text-green-600">$100-150/month</span></div>
-                        <div><span class="text-gray-500">Inventory Target:</span> <span class="font-semibold text-orange-600">+20% turnover</span></div>
                     </div>
                     
                     <div class="judgment-box">
@@ -1366,7 +1669,7 @@ const portfolioHTML = `
                             <i class="fas fa-brain text-purple-500"></i>
                             <span class="font-semibold text-gray-700">AI PM Judgment</span>
                         </div>
-                        <p class="text-gray-600 text-sm">Avoided single-signal trend detection; prioritized <strong>correlated confidence</strong> over raw volume for higher conviction predictions.</p>
+                        <p class="text-gray-600 text-sm">Prioritized <strong>correlated confidence</strong> over raw volume for higher conviction.</p>
                     </div>
                 </div>
 
@@ -1382,9 +1685,7 @@ const portfolioHTML = `
                                 <p class="text-indigo-500">FinTech | CrewAI | Agent Systems</p>
                             </div>
                         </div>
-                        <div class="flex gap-2">
-                            <span class="status-badge active"><i class="fas fa-check-circle mr-1"></i>Completed</span>
-                        </div>
+                        <span class="status-badge active"><i class="fas fa-check-circle mr-1"></i>Completed</span>
                     </div>
                     
                     <p class="text-gray-600 mb-4">Collaborative AI agents for market research and signal synthesis</p>
@@ -1393,49 +1694,6 @@ const portfolioHTML = `
                         <span class="tech-pill"><i class="fas fa-users-cog mr-1"></i>CrewAI</span>
                         <span class="tech-pill"><i class="fab fa-python mr-1"></i>Python</span>
                         <span class="tech-pill"><i class="fas fa-chart-line mr-1"></i>Financial APIs</span>
-                        <span class="tech-pill"><i class="fas fa-robot mr-1"></i>LLMs</span>
-                    </div>
-                    
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-question-circle text-purple-400"></i>
-                                <span class="font-semibold text-gray-700">Why</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">Single-model analysis often lacks diverse viewpoints, structured reasoning, and cross-validation needed for reliable market insights.</p>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-lightbulb text-yellow-400"></i>
-                                <span class="font-semibold text-gray-700">What</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">CrewAI-based multi-agent system where agents analyze fundamentals, track technical indicators, summarize news, and debate signals before final output.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="architecture-block mt-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <i class="fas fa-users text-green-500"></i>
-                            <span class="font-semibold text-gray-700">Agent Roles</span>
-                        </div>
-                        <div class="grid md:grid-cols-4 gap-3">
-                            <div class="bg-white p-3 rounded-lg text-center">
-                                <i class="fas fa-balance-scale text-blue-400 text-lg mb-1"></i>
-                                <div class="text-xs font-semibold text-gray-700">Fundamentals</div>
-                            </div>
-                            <div class="bg-white p-3 rounded-lg text-center">
-                                <i class="fas fa-chart-area text-green-400 text-lg mb-1"></i>
-                                <div class="text-xs font-semibold text-gray-700">Technical</div>
-                            </div>
-                            <div class="bg-white p-3 rounded-lg text-center">
-                                <i class="fas fa-newspaper text-orange-400 text-lg mb-1"></i>
-                                <div class="text-xs font-semibold text-gray-700">News Summary</div>
-                            </div>
-                            <div class="bg-white p-3 rounded-lg text-center">
-                                <i class="fas fa-gavel text-purple-400 text-lg mb-1"></i>
-                                <div class="text-xs font-semibold text-gray-700">Signal Debate</div>
-                            </div>
-                        </div>
                     </div>
                     
                     <div class="judgment-box">
@@ -1443,7 +1701,7 @@ const portfolioHTML = `
                             <i class="fas fa-brain text-purple-500"></i>
                             <span class="font-semibold text-gray-700">AI PM Judgment</span>
                         </div>
-                        <p class="text-gray-600 text-sm">Used agents to <strong>simulate analyst diversity</strong>, not to chase prediction accuracy. Role isolation prevents overfitting.</p>
+                        <p class="text-gray-600 text-sm">Used agents to <strong>simulate analyst diversity</strong>, not to chase prediction accuracy.</p>
                     </div>
                 </div>
 
@@ -1459,63 +1717,15 @@ const portfolioHTML = `
                                 <p class="text-indigo-500">Analytics | LangGraph | Agent Workflows</p>
                             </div>
                         </div>
-                        <div class="flex gap-2">
-                            <span class="status-badge active"><i class="fas fa-check-circle mr-1"></i>Completed</span>
-                        </div>
+                        <span class="status-badge active"><i class="fas fa-check-circle mr-1"></i>Completed</span>
                     </div>
                     
-                    <p class="text-gray-600 mb-4">Automating analytics queries and insights via agent workflows</p>
+                    <p class="text-gray-600 mb-4">Automating analytics queries via stateful agent workflows</p>
                     
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="tech-pill"><i class="fas fa-project-diagram mr-1"></i>LangGraph</span>
                         <span class="tech-pill"><i class="fab fa-python mr-1"></i>Python</span>
                         <span class="tech-pill"><i class="fas fa-database mr-1"></i>SQL</span>
-                        <span class="tech-pill"><i class="fas fa-robot mr-1"></i>LLMs</span>
-                    </div>
-                    
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-question-circle text-purple-400"></i>
-                                <span class="font-semibold text-gray-700">Why</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">Analytics teams spend disproportionate time on repetitive questions that could be automated with proper guardrails.</p>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-lightbulb text-yellow-400"></i>
-                                <span class="font-semibold text-gray-700">What</span>
-                            </div>
-                            <p class="text-gray-600 text-sm">LangGraph-based BI agent capable of interpreting natural language queries, routing tasks to SQL/metrics/explanation agents, and returning structured insights.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="architecture-block mt-6">
-                        <div class="flex items-center gap-2 mb-3">
-                            <i class="fas fa-sitemap text-blue-500"></i>
-                            <span class="font-semibold text-gray-700">Stateful Agent Graph</span>
-                        </div>
-                        <div class="flex items-center justify-center gap-2 flex-wrap">
-                            <div class="bg-white px-4 py-2 rounded-lg text-xs font-semibold text-gray-700">Query Parsing</div>
-                            <i class="fas fa-arrow-right text-gray-400"></i>
-                            <div class="bg-white px-4 py-2 rounded-lg text-xs font-semibold text-gray-700">Tool Routing</div>
-                            <i class="fas fa-arrow-right text-gray-400"></i>
-                            <div class="bg-white px-4 py-2 rounded-lg text-xs font-semibold text-gray-700">Execution</div>
-                            <i class="fas fa-arrow-right text-gray-400"></i>
-                            <div class="bg-white px-4 py-2 rounded-lg text-xs font-semibold text-gray-700">Validation</div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-6 pt-4 border-t border-gray-100">
-                        <div class="flex items-center gap-2 mb-2">
-                            <i class="fas fa-tasks text-blue-400"></i>
-                            <span class="font-semibold text-gray-700">Evaluation Metrics</span>
-                        </div>
-                        <div class="flex flex-wrap gap-4 text-sm">
-                            <div><span class="text-gray-500">Query Routing:</span> <span class="text-gray-700">Accuracy</span></div>
-                            <div><span class="text-gray-500">Metrics:</span> <span class="text-gray-700">Correctness</span></div>
-                            <div><span class="text-gray-500">Trade-offs:</span> <span class="text-gray-700">Latency vs Accuracy</span></div>
-                        </div>
                     </div>
                     
                     <div class="judgment-box">
@@ -1523,10 +1733,9 @@ const portfolioHTML = `
                             <i class="fas fa-brain text-purple-500"></i>
                             <span class="font-semibold text-gray-700">AI PM Judgment</span>
                         </div>
-                        <p class="text-gray-600 text-sm">Chose <strong>agent orchestration</strong> over monolithic prompts to improve reliability and enable better debugging/iteration.</p>
+                        <p class="text-gray-600 text-sm">Chose <strong>agent orchestration</strong> over monolithic prompts to improve reliability.</p>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -1534,17 +1743,9 @@ const portfolioHTML = `
         <section id="skills" class="tab-content">
             <div class="flex items-center gap-4 mb-8">
                 <h2 class="text-3xl font-bold text-gray-800">Skills & Expertise</h2>
-                <svg class="section-illustration" viewBox="0 0 150 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="30" y="40" width="90" height="60" rx="8" fill="#E9D8FD"/>
-                    <circle cx="55" cy="60" r="12" fill="#667EEA"/>
-                    <circle cx="75" cy="75" r="10" fill="#9AE6B4"/>
-                    <circle cx="95" cy="55" r="14" fill="#F6AD7B"/>
-                    <path d="M45 85 L55 75 L70 80 L85 65 L100 70" stroke="#4A5568" stroke-width="2" stroke-linecap="round"/>
-                </svg>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Product & Strategy -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm">
                     <div class="flex items-center gap-3 mb-6">
                         <div class="w-12 h-12 rounded-xl bg-indigo-100 flex items-center justify-center text-indigo-500 text-xl">
@@ -1560,11 +1761,9 @@ const portfolioHTML = `
                         <span class="skill-tag">A/B Testing</span>
                         <span class="skill-tag">User Analytics</span>
                         <span class="skill-tag">PRD Writing</span>
-                        <span class="skill-tag">Stakeholder Management</span>
                     </div>
                 </div>
 
-                <!-- AI & Technology -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm">
                     <div class="flex items-center gap-3 mb-6">
                         <div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center text-purple-500 text-xl">
@@ -1574,20 +1773,16 @@ const portfolioHTML = `
                     </div>
                     <div class="flex flex-wrap gap-2">
                         <span class="skill-tag">Generative AI</span>
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">LLMs</span>
+                        <span class="skill-tag">RAG Systems</span>
                         <span class="skill-tag">NLP</span>
                         <span class="skill-tag">Computer Vision</span>
-                        <span class="skill-tag">LLMs</span>
-                        <span class="skill-tag">Prompt Engineering</span>
-                        <span class="skill-tag">RAG Systems</span>
                         <span class="skill-tag">Multi-Agent Systems</span>
                         <span class="skill-tag">LangGraph</span>
                         <span class="skill-tag">CrewAI</span>
                     </div>
                 </div>
 
-                <!-- Technical Skills -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm">
                     <div class="flex items-center gap-3 mb-6">
                         <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center text-green-500 text-xl">
@@ -1602,14 +1797,10 @@ const portfolioHTML = `
                         <span class="skill-tag">GCP</span>
                         <span class="skill-tag">BigQuery</span>
                         <span class="skill-tag">N8N</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">APIs</span>
                         <span class="skill-tag">Supabase</span>
-                        <span class="skill-tag">Vector DBs</span>
                     </div>
                 </div>
 
-                <!-- Tools & Platforms -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm">
                     <div class="flex items-center gap-3 mb-6">
                         <div class="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center text-orange-500 text-xl">
@@ -1624,44 +1815,7 @@ const portfolioHTML = `
                         <span class="skill-tag">Tableau</span>
                         <span class="skill-tag">Figma</span>
                         <span class="skill-tag">Shopify</span>
-                        <span class="skill-tag">Razorpay</span>
                         <span class="skill-tag">Dialogflow</span>
-                        <span class="skill-tag">Apify</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Domain Expertise -->
-            <div class="mt-8">
-                <h3 class="text-xl font-bold text-gray-800 mb-6">Domain Expertise</h3>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-6 rounded-2xl text-center">
-                        <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-white shadow-sm flex items-center justify-center text-2xl text-indigo-500">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <h4 class="font-semibold text-gray-800">E-commerce</h4>
-                        <p class="text-sm text-gray-500 mt-1">Amazon, D2C</p>
-                    </div>
-                    <div class="bg-gradient-to-br from-green-50 to-teal-50 p-6 rounded-2xl text-center">
-                        <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-white shadow-sm flex items-center justify-center text-2xl text-green-500">
-                            <i class="fas fa-landmark"></i>
-                        </div>
-                        <h4 class="font-semibold text-gray-800">FinTech</h4>
-                        <p class="text-sm text-gray-500 mt-1">Banking, Payments</p>
-                    </div>
-                    <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-2xl text-center">
-                        <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-white shadow-sm flex items-center justify-center text-2xl text-blue-500">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h4 class="font-semibold text-gray-800">SaaS</h4>
-                        <p class="text-sm text-gray-500 mt-1">Enterprise Analytics</p>
-                    </div>
-                    <div class="bg-gradient-to-br from-orange-50 to-yellow-50 p-6 rounded-2xl text-center">
-                        <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-white shadow-sm flex items-center justify-center text-2xl text-orange-500">
-                            <i class="fas fa-tshirt"></i>
-                        </div>
-                        <h4 class="font-semibold text-gray-800">D2C Fashion</h4>
-                        <p class="text-sm text-gray-500 mt-1">Trumee</p>
                     </div>
                 </div>
             </div>
@@ -1671,105 +1825,44 @@ const portfolioHTML = `
         <section id="education" class="tab-content">
             <div class="flex items-center gap-4 mb-8">
                 <h2 class="text-3xl font-bold text-gray-800">Education & Certifications</h2>
-                <svg class="section-illustration" viewBox="0 0 150 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M75 20 L20 50 L75 80 L130 50 Z" fill="#667EEA"/>
-                    <rect x="70" y="50" width="10" height="40" fill="#4A5568"/>
-                    <ellipse cx="75" cy="95" rx="25" ry="8" fill="#E9D8FD"/>
-                    <circle cx="75" cy="35" r="8" fill="#F6AD7B"/>
-                </svg>
             </div>
 
-            <!-- Education -->
             <h3 class="text-xl font-bold text-gray-800 mb-6">Education</h3>
             <div class="grid md:grid-cols-3 gap-6 mb-12">
                 <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-indigo-400">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 rounded-xl bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold">
-                            ISB
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800">Indian School of Business</h4>
-                            <p class="text-sm text-gray-500">2019 - 2020</p>
-                        </div>
-                    </div>
-                    <p class="text-indigo-500 font-medium mb-2">PGP in IT & Marketing</p>
-                    <p class="text-gray-600 text-sm">Post Graduate Programme focusing on Information Technology and Marketing management.</p>
+                    <h4 class="font-bold text-gray-800">Indian School of Business</h4>
+                    <p class="text-sm text-gray-500 mb-2">2019 - 2020</p>
+                    <p class="text-indigo-500 font-medium">PGP in IT & Marketing</p>
                 </div>
-
                 <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-purple-400">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center text-purple-600 font-bold">
-                            IIIT
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800">IIIT Bangalore</h4>
-                            <p class="text-sm text-gray-500">2020 - 2021</p>
-                        </div>
-                    </div>
-                    <p class="text-purple-500 font-medium mb-2">PG Diploma - Data Science & ML</p>
-                    <p class="text-gray-600 text-sm">Advanced program in Data Science and Machine Learning with hands-on projects.</p>
+                    <h4 class="font-bold text-gray-800">IIIT Bangalore</h4>
+                    <p class="text-sm text-gray-500 mb-2">2020 - 2021</p>
+                    <p class="text-purple-500 font-medium">PG Diploma - Data Science & ML</p>
                 </div>
-
                 <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-orange-400">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center text-orange-600 font-bold">
-                            VIT
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-gray-800">VIT University</h4>
-                            <p class="text-sm text-gray-500">2008 - 2012</p>
-                        </div>
-                    </div>
-                    <p class="text-orange-500 font-medium mb-2">Bachelor of Technology</p>
-                    <p class="text-gray-600 text-sm">Undergraduate engineering degree from Vellore Institute of Technology.</p>
+                    <h4 class="font-bold text-gray-800">VIT University</h4>
+                    <p class="text-sm text-gray-500 mb-2">2008 - 2012</p>
+                    <p class="text-orange-500 font-medium">Bachelor of Technology</p>
                 </div>
             </div>
 
-            <!-- Certifications -->
             <h3 class="text-xl font-bold text-gray-800 mb-6">Certifications</h3>
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-6 rounded-2xl flex items-start gap-4">
-                    <div class="w-14 h-14 rounded-xl bg-white shadow-sm flex items-center justify-center text-indigo-500 text-xl flex-shrink-0">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-gray-800">AI Generalist Bootcamp</h4>
-                        <p class="text-indigo-500 text-sm mb-1">Outskill | July 2025 - Aug 2025</p>
-                        <p class="text-gray-600 text-sm">Comprehensive training on AI technologies, GenAI applications, and practical implementation.</p>
-                    </div>
+                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-6 rounded-2xl">
+                    <h4 class="font-bold text-gray-800">AI Generalist Bootcamp</h4>
+                    <p class="text-indigo-500 text-sm">Outskill | 2025</p>
                 </div>
-
-                <div class="bg-gradient-to-br from-green-50 to-teal-50 p-6 rounded-2xl flex items-start gap-4">
-                    <div class="w-14 h-14 rounded-xl bg-white shadow-sm flex items-center justify-center text-green-500 text-xl flex-shrink-0">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-gray-800">AI & Machine Learning Program</h4>
-                        <p class="text-green-500 text-sm mb-1">Scaler | July 2024 - July 2025</p>
-                        <p class="text-gray-600 text-sm">Advanced program covering ML algorithms, deep learning, and production ML systems.</p>
-                    </div>
+                <div class="bg-gradient-to-br from-green-50 to-teal-50 p-6 rounded-2xl">
+                    <h4 class="font-bold text-gray-800">AI & Machine Learning Program</h4>
+                    <p class="text-green-500 text-sm">Scaler | 2024-2025</p>
                 </div>
-
-                <div class="bg-gradient-to-br from-orange-50 to-yellow-50 p-6 rounded-2xl flex items-start gap-4">
-                    <div class="w-14 h-14 rounded-xl bg-white shadow-sm flex items-center justify-center text-orange-500 text-xl flex-shrink-0">
-                        <i class="fas fa-cubes"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-gray-800">Product Management Certification</h4>
-                        <p class="text-orange-500 text-sm mb-1">Duke Corporation + UpGrad | Dec 2019 - June 2020</p>
-                        <p class="text-gray-600 text-sm">Comprehensive product management training covering strategy, execution, and leadership.</p>
-                    </div>
+                <div class="bg-gradient-to-br from-orange-50 to-yellow-50 p-6 rounded-2xl">
+                    <h4 class="font-bold text-gray-800">Product Management Certification</h4>
+                    <p class="text-orange-500 text-sm">Duke + UpGrad | 2019-2020</p>
                 </div>
-
-                <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-2xl flex items-start gap-4">
-                    <div class="w-14 h-14 rounded-xl bg-white shadow-sm flex items-center justify-center text-blue-500 text-xl flex-shrink-0">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-gray-800">AI Product Consulting</h4>
-                        <p class="text-blue-500 text-sm mb-1">HLSR Technologies | July 2025</p>
-                        <p class="text-gray-600 text-sm">EdTech AI project integrating TTS technology and multilingual synthesis for educational content.</p>
-                    </div>
+                <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-2xl">
+                    <h4 class="font-bold text-gray-800">AI Product Consulting</h4>
+                    <p class="text-blue-500 text-sm">HLSR Technologies | 2025</p>
                 </div>
             </div>
         </section>
@@ -1803,15 +1896,6 @@ const portfolioHTML = `
                 </div>
 
                 <div class="mt-12 p-8 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl">
-                    <div class="flex items-center justify-center mb-4">
-                        <svg class="section-illustration" viewBox="0 0 150 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="75" cy="60" rx="50" ry="40" fill="#E9D8FD" opacity="0.5"/>
-                            <circle cx="55" cy="50" r="20" fill="#667EEA"/>
-                            <circle cx="95" cy="50" r="20" fill="#9AE6B4"/>
-                            <circle cx="75" cy="75" r="15" fill="#F6AD7B"/>
-                            <path d="M55 50 L75 70 L95 50" stroke="white" stroke-width="3" stroke-linecap="round"/>
-                        </svg>
-                    </div>
                     <h3 class="text-xl font-bold text-gray-800 mb-2">Open to Opportunities</h3>
                     <p class="text-gray-600">Looking for Product Leadership roles in AI-first companies, SaaS, or FinTech where I can drive growth through data-driven products and intelligent automation.</p>
                 </div>
@@ -1828,31 +1912,25 @@ const portfolioHTML = `
     </footer>
 
     <script>
-        // Tab Navigation
         function switchTab(tabId) {
-            // Remove active class from all tabs and contents
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
             document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
             
-            // Add active class to selected tab and content
             const tabBtn = document.querySelector(\`[data-tab="\${tabId}"]\`);
             const tabContent = document.getElementById(tabId);
             
             if (tabBtn) tabBtn.classList.add('active');
             if (tabContent) tabContent.classList.add('active');
             
-            // Smooth scroll to top of content
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
         
-        // Add click handlers to tab buttons
         document.querySelectorAll('.tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 switchTab(btn.dataset.tab);
             });
         });
         
-        // Intersection Observer for animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -1867,7 +1945,6 @@ const portfolioHTML = `
             });
         }, observerOptions);
         
-        // Observe timeline items and project cards
         document.querySelectorAll('.timeline-content, .project-card, .ai-card').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(20px)';
