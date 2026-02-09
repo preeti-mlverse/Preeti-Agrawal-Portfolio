@@ -754,6 +754,285 @@ const portfolioHTML = `
                 </svg>
             </div>
 
+            <!-- Trumee Section -->
+            <div class="company-header mb-6" style="background: linear-gradient(135deg, #9F7AEA 0%, #ED64A6 100%);">
+                <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center">
+                    <i class="fas fa-store text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">Trumee</h3>
+                    <p class="text-white/80 text-sm">Founder | AI-enabled D2C Fashion | 2024-Present</p>
+                </div>
+            </div>
+
+            <div class="space-y-8 mb-12">
+                <!-- Trumee Project 1: Full P&L Ownership -->
+                <div class="project-card" style="border-left-color: #9F7AEA;">
+                    <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-white text-xl">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">Full P&L Ownership</h3>
+                                <p class="text-indigo-500">End-to-End Business Lifecycle</p>
+                            </div>
+                        </div>
+                        <div class="metric-badge" style="background: linear-gradient(135deg, #E9D8FD 0%, #C4B5FD 100%);">
+                            <i class="fas fa-percent mr-2"></i>12% Cost Reduction
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-4">Complete business ownership from sourcing to customer delivery, validating AI-driven demand and inventory solutions.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-question-circle text-purple-400"></i>
+                                <span class="font-semibold text-gray-700">Why</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Post layoffs at AlphaSense, wanted hands-on experience in end-to-end business ownership to validate AI-driven solutions in a real market environment.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-lightbulb text-yellow-400"></i>
+                                <span class="font-semibold text-gray-700">What</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Led complete business lifecycle—sourcing, vendor negotiations, pricing, inventory planning, fulfillment, and customer delivery for an AI-enabled D2C fashion brand.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-cogs text-green-400"></i>
+                                <span class="font-semibold text-gray-700">How</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Improved supplier economics through strategic negotiations. Implemented inventory discipline practices. Optimized fulfillment workflows for efficiency.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-users text-blue-400"></i>
+                                <span class="font-semibold text-gray-700">With Whom</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Vendors & suppliers, fulfillment partners, payment providers (Razorpay), logistics (Shiprocket), platform (Shopify).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-3">
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">12% Operational Cost ↓</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #E9D8FD 0%, #C4B5FD 100%);">Full P&L Control</span>
+                        </div>
+                    </div>
+                    
+                    <div class="judgment-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-brain text-purple-500"></i>
+                            <span class="font-semibold text-gray-700">PM Judgment</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Chose <strong>lean operations over rapid scaling</strong> to validate unit economics before growth investment.</p>
+                    </div>
+                </div>
+
+                <!-- Trumee Project 2: TrendRadar - Inventory Intelligence -->
+                <div class="project-card" style="border-left-color: #ED64A6;">
+                    <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-400 to-red-400 flex items-center justify-center text-white text-xl">
+                                <i class="fas fa-satellite-dish"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">TrendRadar - Inventory Intelligence</h3>
+                                <p class="text-indigo-500">Demand Sensing & Deadstock Reduction</p>
+                            </div>
+                        </div>
+                        <div class="metric-badge" style="background: linear-gradient(135deg, #FED7AA 0%, #F6AD7B 100%);">
+                            <i class="fas fa-box-open mr-2"></i>Deadstock ↓
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-4">Demand-sensing initiative aligning buying decisions with real-time fashion trends and historical sales signals.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-question-circle text-purple-400"></i>
+                                <span class="font-semibold text-gray-700">Why</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Fashion retail suffers from high deadstock rates due to trend volatility. Traditional buying decisions rely on intuition rather than data signals.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-lightbulb text-yellow-400"></i>
+                                <span class="font-semibold text-gray-700">What</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Prototype demand-sensing system correlating real-time fashion trends with historical sales to enable faster, data-driven assortment decisions.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-cogs text-green-400"></i>
+                                <span class="font-semibold text-gray-700">How</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Multi-signal correlation: social trends (Instagram, Pinterest), search intent (Google Trends), inventory levels, and cultural events. Pattern DNA logic for trend scoring.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-users text-blue-400"></i>
+                                <span class="font-semibold text-gray-700">With Whom</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Built independently using Gemini Vision, Apify scrapers, Supabase, and n8n orchestration.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-3">
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">Reduced Overstock Risk</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #BEE3F8 0%, #90CDF4 100%);">Faster Assortment Decisions</span>
+                        </div>
+                    </div>
+                    
+                    <div class="judgment-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-brain text-purple-500"></i>
+                            <span class="font-semibold text-gray-700">PM Judgment</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Prioritized <strong>correlated multi-signal confidence</strong> over single-source trend data for higher conviction buying.</p>
+                    </div>
+                </div>
+
+                <!-- Trumee Project 3: Customer Acquisition & Retention -->
+                <div class="project-card" style="border-left-color: #68D391;">
+                    <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-green-400 to-teal-400 flex items-center justify-center text-white text-xl">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">Customer Acquisition & Retention</h3>
+                                <p class="text-indigo-500">Data-Driven Growth & Lifecycle</p>
+                            </div>
+                        </div>
+                        <div class="metric-badge" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">
+                            <i class="fas fa-shopping-cart mr-2"></i>12% Cart Recovery
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-4">Data-driven growth and lifecycle strategies across paid, email, and social channels exceeding industry benchmarks.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-question-circle text-purple-400"></i>
+                                <span class="font-semibold text-gray-700">Why</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">D2C brands struggle with high CAC and low retention. Industry benchmarks for cart recovery are 8-10%.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-lightbulb text-yellow-400"></i>
+                                <span class="font-semibold text-gray-700">What</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Comprehensive growth system covering acquisition channels, abandoned cart recovery, and customer reactivation campaigns.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-cogs text-green-400"></i>
+                                <span class="font-semibold text-gray-700">How</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Built data-driven strategies across paid ads, email sequences, and social engagement. Segmented users by behavior for personalized outreach.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-users text-blue-400"></i>
+                                <span class="font-semibold text-gray-700">With Whom</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Implemented using Shopify, email automation tools, Meta Ads, and analytics dashboards.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-3">
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">12% Cart Recovery</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #E9D8FD 0%, #C4B5FD 100%);">7% Reactivation</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #BEE3F8 0%, #90CDF4 100%);">Above Industry Avg</span>
+                        </div>
+                    </div>
+                    
+                    <div class="judgment-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-brain text-purple-500"></i>
+                            <span class="font-semibold text-gray-700">PM Judgment</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Focused on <strong>retention before acquisition</strong> to maximize LTV before scaling spend.</p>
+                    </div>
+                </div>
+
+                <!-- Trumee Project 4: Funnel & Marketing Automation -->
+                <div class="project-card" style="border-left-color: #667EEA;">
+                    <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-400 to-blue-500 flex items-center justify-center text-white text-xl">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">Funnel & Marketing Automation</h3>
+                                <p class="text-indigo-500">GenAI-Powered Workflows</p>
+                            </div>
+                        </div>
+                        <div class="metric-badge">
+                            <i class="fas fa-bolt mr-2"></i>70% Faster Execution
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-4">Generative AI automation for lifecycle communications and content workflows, dramatically reducing execution time.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-question-circle text-purple-400"></i>
+                                <span class="font-semibold text-gray-700">Why</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Manual content creation and lifecycle messaging is time-consuming for solo founders. Needed to scale output without scaling team.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-lightbulb text-yellow-400"></i>
+                                <span class="font-semibold text-gray-700">What</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">GenAI-powered automation for email sequences, product descriptions, social content, and customer communications.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-cogs text-green-400"></i>
+                                <span class="font-semibold text-gray-700">How</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Applied generative AI (GPT, Claude) with custom prompts for brand voice. Built n8n workflows for automated content pipelines.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-users text-blue-400"></i>
+                                <span class="font-semibold text-gray-700">With Whom</span>
+                            </div>
+                            <p class="text-gray-600 text-sm">Self-built using LLM APIs, n8n automation, and integration with Shopify and email platforms.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-4 border-t border-gray-100">
+                        <div class="flex flex-wrap gap-3">
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #C6F6D5 0%, #9AE6B4 100%);">70% Time Savings</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #E9D8FD 0%, #C4B5FD 100%);">Improved Conversion</span>
+                            <span class="metric-badge text-sm" style="background: linear-gradient(135deg, #FED7AA 0%, #F6AD7B 100%);">Scalable Output</span>
+                        </div>
+                    </div>
+                    
+                    <div class="judgment-box">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-brain text-purple-500"></i>
+                            <span class="font-semibold text-gray-700">PM Judgment</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Used GenAI as a <strong>force multiplier for solo operations</strong> rather than replacing human judgment.</p>
+                    </div>
+                </div>
+            </div>
+
             <!-- AlphaSense Section -->
             <div class="company-header mb-6">
                 <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center">
